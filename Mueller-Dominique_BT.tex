@@ -1,0 +1,180 @@
+	% ================================================================
+% BACHELOR THESIS
+% ================================================================
+
+% ----------------------------------------------------------------
+% ENVIRONMENT
+% ----------------------------------------------------------------
+
+% --- use KOMAScript european classes
+
+\documentclass[enabledeprecatedfontcommands, a4paper,11pt,headsepline,oneside,openany]{scrbook}
+
+% --- import declarations
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{microtype}
+\usepackage[ngerman]{babel}
+\usepackage{newcent}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{quotmark}
+\usepackage{nameref}
+\usepackage{hyphenat}
+\usepackage[shortcuts]{extdash}
+\usepackage{footnote}
+
+
+\usepackage{natbib}
+
+
+
+%\usepackag BachelorThesis.pdfe[longnamesfirst]{natbib}
+
+%%% Packages für APA-Zitierung %%%
+%\usepackage[natbibapa]{apacite}
+%\usepackage{apalike}
+
+
+%\usepackage{apacitepp} --> hat fehler verursacht!!!
+\usepackage{booktabs}
+\usepackage{tabularx}  % damit zellen den rest des zur vergüfung stehenden Platzes teilen
+
+
+
+
+\usepackage[pdftex]{thumbpdf}     % run: thumbpdf
+%\usepackage{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{tabu} 
+\usepackage{syntax}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{listingsutf8}
+\usepackage[T1]{fontenc} % für Umlaute in Tabellen caption und label
+\usepackage[table]{xcolor}
+
+\usepackage{pdflscape}
+\usepackage{geometry}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3,
+	literate={ö}{{\"o}}1
+			 {ä}{{\"a}}1
+			 {ü}{{\"u}}1
+			 {Ä}{{\"A}}1
+			 {Ö}{{\"O}}1
+			 {Ü}{{\"U}}1
+}
+
+
+\usepackage[
+    pdfpagemode={UseOutlines},
+    pdftitle={Mueller-Dominique_-BT},
+    pdfauthor={Dominique, Müller},
+    pdfsubject={Automatische Analyse von Kamerabildern zur Prognose des Geburtszeitpunkts von Kälbern},
+    pdfkeywords={Smart Farming, OpenCV, Pattern Recognition, Domain Analysis},
+    pdfcreator={pdflatex},
+    pdfproducer={LaTeX with hyperref},
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={red!50!black},
+    urlcolor={red!50!black},
+    anchorcolor={red!50!black},
+    bookmarks=true,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    ]{hyperref}
+\usepackage{breakurl}
+
+
+
+\usepackage{graphicx}
+\usepackage{titletoc}
+
+\definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
+\definecolor{darkmaroon}{cmyk}{0,0.87,0.68,0.5}
+
+% für Mengenalgebra
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --- display entries in table of contents up to level 5
+
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{5}
+
+% --- physical parameters
+
+\onehalfspacing
+\pdfadjustspacing=1
+\clubpenalty=4500 %
+\widowpenalty=10000 %
+
+% change table numbering 
+\usepackage{chngcntr}
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{equation}{chapter}
+
+
+%----------------------------------------------------------------
+% BODY ----------------------------------------------------------------
+
+\begin{document}
+
+\frontmatter
+    \input{TitlePage}
+    \input{Abstract}
+    \tableofcontents
+
+\mainmatter
+  
+	\input{Chapter1}
+	\input{Chapter2}
+	\input{Chapter3}
+	\input{Chapter3-1}    
+	\input{Chapter3-2}
+	\input{Chapter3-2-1}
+	\input{Chapter3-2-2}	
+	\input{Chapter3-4}  
+	\input{Chapter3-3}                              
+	\input{Chapter4}
+	\input{Chapter5}
+	\input{Chapter6}
+	\input{Chapter7}    
+	%\input{Fragen}        
+\backmatter
+
+   \input{Affirmation}
+   \listoffigures% Abbildungsverzeichnis
+    \listoftables% Tabellenverzeichnis	       
+    \input{Bibliography}
+    \input{Appendix}
+    \input{Appendix-Glossary}
+    \input{Appendix-Documentation}   
+\end{document}
+
+% ================================================================
+% BACHELOR THESIS
+% ================================================================

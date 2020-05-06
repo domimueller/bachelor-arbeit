@@ -1,0 +1,76 @@
+% ================================================================
+% CHAPTER 5: Resultate
+% ================================================================
+
+
+\chapter{Resultate}
+
+Zweites Feedback von Herrn Collovà noch nicht umgesetzt, da nur Notizen von mir. Es gibt auch nicht zu jeder Aussage hier Quellen, da es Vermutungen von mir sind, die ich noch verfolgen will. 
+
+\textbf{Der Inhalt dieses Kapitels kann im Moment als Notiz betrachtet werden. Ist noch nicht reingeschrieben.} \newline
+Wahrscheinlich wird es schwierig sein, verhaltensorientierte Merkmale zu identifizieren. Der Fokus liegt daher wohl eher an physiologischen Merkmalen. 
+Es können aber auch nicht alle physiologischen Merkmale erfasst werden. Die Analysemethode schränkt die Anzahl Parameter ein, welche berücksichtigt werden können. Beispielweise benötigt man für die Analyse der Abdominalkontraktion einen Bauchgurt oder für die Analyse der Bewegungsabläufe braucht man vermutlich Beschleunigungssensoren oder extrem ausgefeilte Analyse von Videoaufnahmen.
+
+Grobes Vorgehen zur Lösung nach \citep[S. 256]{FernandezVillan2019}: 
+
+\begin{itemize}
+	\item Convert Image to grayscale by using cv2.cvtColor()
+	\item Binarize them using cv2.threshold()
+	\item find countours by using cv2.findContours()
+\end{itemize}
+
+Was ich bisher gemacht habe: 
+
+1.	Bild einlesen
+2.	Bild heller machen; cv2.add()
+3.	Normalisierung der Helligkeit und Kontrast des Bildes erhöhen: «Histogram Equalization» mit dem Verfahren CLAHE im HSV-Color-Space (CLAHE = Contrast Limited Adaptive Histogram Equalization); cv2.createCLAHE()
+4.	Image in «Grayscale-Bild» umwandeln: cv2.cvtColor(equalized\_image, cv2.COLOR\_BGR2GRAY )
+5.	Gaussian-Filter anwenden, um «Noise» zu reduzieren: cv2.GaussianBlur(grayscaled\_image, (9  ,9), 0)
+6.	Segmentierung des Bildes  (führt zu Binärbild): cv2.threshold(filtered\_image , 0, 255, cv2.THRESH\_BINARY + cv2.THRESH\_TRIANGLE)
+7.	Detektierung von Konturen und zugleich Approximation/ Kompression von Konturen. cv2.findContours(thresholded\_image, cv2.RETR\_EXTERNAL, cv2.CHAIN\_APPROX\_TC89\_KCOS)
+8.	Filterung der Konturen: Da einige Konturen nur Stroh-Haufen oder Steckdose am Rande des Bildes zeigen, werden nur Konturen mit Fläche > 10000px in der Auswahl berücksichtigt. Dies ist sehr wirkungsvoll, man grenzt hier die detektierten Konturen bei einigen Bildern von über 1000 auf nur 10 ein.: int(cv2.contourArea(contour))> 10000
+9.	Detektierte Konturen in eine Kopie des Orignalbildes einzeichnen.
+
+-->  It is safe to say that CLAHE gives better results and performance than applying historgram equalization in many situations. In this sennse, CLAHE is commonly used as the first step in many computer vision applications.
+Weitere Ideen: 
+
+\begin{itemize}
+
+	\item cv2.matchShapes() (Kapitel conturen ganz am schluss)
+	\item Feature Detection mit SURF, FAST, ORB, ... und anschliessend Feature Matching (marker-less augmented reality). Vielleicht kann ich den Stallboden und den Pfosten als "planar marker" brauchen? Ansonsten marker-based augmented reality --> wahrscheinlich einfacher. (Kapitel Augmented Reality)
+	\item ROI?
+	\item Vielleicht statt geometrisches Abbild der Kuh manuell machen, Bilder von x Kühen bearbeiten und deren Konturen auslesen. Anschliessend diese Konturen verwenden.
+\end{itemize}
+
+Eher Erfolgreiche Thresholding Konfigurationen:
+thresholded  = cv2.adaptiveThreshold(filtered , 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 3) 
+mit contours2, hierarchy2 = cv2.findContours(thresholded, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+
+rect, thresholded = cv2.threshold(filtered , 60, 255, cv2.THRESH_BINARY)
+
+cannycontours nicht vielversprechend
+
+ACHTUNG: Nach aktuellen Erkgenntnissen hat CLAHE einen negativen Effekt auf erkennung! Clahe nützt wahrscheinlich nur für farbsegmentierung inRange. CLAHE wird in Objekt Detection auch nie benützt eigentlich.. Ausserdem ist CLAHE für manuelle Überwachung gut. 
+
+
+BISHER DIE BESTEN ERGEBNISSE
+
+cow_hsv_lower = np.array([3, 105, 39])
+cow_hsv_upper = np.array([43,205,139])
+hsv = cv2.cvtColor(original_image, cv2.COLOR_BGR2HSV)
+mask = cv2.inRange(hsv, cow_hsv_lower , cow_hsv_upper)
+contours2, hierarchy2 = cv2.findContours(mask, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+
+
+auch gut ist: einfach jeder wert +- 50
+cow_hsv_lower = np.array([-47, 105, 39])
+cow_hsv_upper = np.array([73,205,139])
+
+cow_hsv_lower = np.array([-57, 95, 29])
+cow_hsv_upper = np.array([83,215,149])
+
+cow_hsv2_lower = np.array([-10, 124, 113])
+cow_hsv2_upper = np.array([30,242,213])
+
+
+

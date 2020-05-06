@@ -1,0 +1,20 @@
+subsubsection{OpenCV 4  und zusätzliche Contribution Module kompilieren}
+\begin{itemize}
+	\item \texttt{cd ~/opencv }
+	\item \texttt{mkdir build}
+	\item \texttt{cd build}	
+	\item \texttt{workon bachelorthesis\_py3\_cv4}	
+cmake -D CMAKE\_BUILD\_TYPE=RELEASE \
+-D CMAKE\_INSTALL\_PREFIX=/usr/local \
+-D OPENCV\_EXTRA\_MODULES\_PATH=~/opencv\_contrib/modules \
+-D PYTHON3\_LIBRARY=`python -c 'import subprocess ; import sys ; s = subprocess.check\_output("python-config --configdir", shell=True).decode("utf-8").strip() ; (M, m) = sys.version\_info[:2] ; print("{}/libpython{}.{}.dylib".format(s, M, m))'` \
+-D PYTHON3\_INCLUDE\_DIR=`python -c 'import distutils.sysconfig as s; print(s.get\_python\_inc())'` \
+-D PYTHON3\_EXECUTABLE=\$VIRTUAL\_ENV/bin/python \
+-D BUILD\_opencv\_python2=OFF \
+-D BUILD\_opencv\_python3=ON \
+-D INSTALL\_PYTHON\_EXAMPLES=ON \
+-D INSTALL\_C\_EXAMPLES=OFF \
+-D OPENCV\_ENABLE\_NONFREE=ON \
+-D BUILD\_EXAMPLES=ON 
+		
+	\end{itemize}

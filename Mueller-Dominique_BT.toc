@@ -1,0 +1,59 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\nonumberline Management Summary}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Ausgangslage}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Beschreibung der Situation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Bedarf}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ziele}{4}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Methodisches Vorgehen}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lösungsansatz}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zielerreichung}{8}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Domänenanalyse}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Literaturrecherche}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Grundlegende Geburtsanzeichen}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Zeitliche und prädiktive Hinweise zu den Geburtsanzeichen}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Weiterführende Geburtsanzeichen}{11}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Ablauf einer normalen Geburt}{12}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Erkenntnisse aus den Interviews}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Kernaussagen aus Interviews}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Codierung von Domänenwissen aus Interviews}{17}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Bildmaterial aus ersten Tests}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Domänenmodell}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Legende zu den Diagrammen}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Domänenmodell Geburt}{25}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Allgemeine Bibliothek an Value Objects}{26}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Bibliothek an Value Objects zur Konfiguration und zum Versand von Nachrichten}{27}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Lösung}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Codierung von Domänenwissen}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modellierung der Lösung}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Klassendiagramm des Pakets Image-Analysis}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Klassendiagramm der Pakete Message-Configuration und Message-Posting}{32}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Value-Object-Bibliothek}{33}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Überlegungen für den Betrieb}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Umsetzung in Entwicklung}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detektierung von unwichtigen Bereichen im Bild}{36}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Detektierung von wichtigen Bereichen im Bild}{44}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Erkennung von seitlich liegender Kuh}{51}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Resultate}{56}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Ausblick}{59}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Selbstreflexion}{60}{chapter.7}%
+\contentsline {chapter}{\nonumberline Selbstständigkeitserklärung}{61}{chapter*.6}%
+\contentsline {chapter}{\nonumberline Anhang}{67}{chapter*.14}%
+\contentsline {section}{\numberline {1}Glossar}{67}{section.7.1}%
+\contentsline {section}{\numberline {2}Dokumentation zum entwickelten System}{72}{section.7.2}%
+\contentsline {subsection}{\numberline {2.1}Computer für Entwicklung}{72}{subsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Basisinformationen}{72}{subsubsection.7.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Eingesetzte Software}{72}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {2.3}Installation von OpenCV und vorausgesetzten Softwaremodulen}{72}{subsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Xcode installieren und Lizenzvereinbarung akzeptieren}{72}{subsubsection.7.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Apple Command Line Tools installieren}{73}{subsubsection.7.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Homebrew installieren und Bash Profil anpassen}{73}{subsubsection.7.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Pakete installieren}{73}{subsubsection.7.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Konfiguration und Ordnerstruktur vorbereiten}{73}{subsubsection.7.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Python Pakete installieren und virtuelle Umgebung einrichten}{74}{subsubsection.7.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}GitHub Repositories klonen}{74}{subsubsection.7.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Build erstellen}{75}{subsubsection.7.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}OpenCV 4 kompilieren}{75}{subsubsection.7.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Spyder für die Benützung mit der virtuellen Umgebung einrichten}{75}{subsubsection.7.2.3.10}%
+\contentsline {subsection}{\numberline {2.4}Nützliche Links}{76}{subsection.7.2.4}%
+\contentsline {section}{\numberline {3}Mindmap als Entwurf für Modellierung der Domäne}{77}{section.7.3}%
+\contentsfinish 
