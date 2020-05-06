@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  6 MAY 2020 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  7 MAY 2020 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,10 +748,6 @@ LaTeX Warning: Label `fig: Öffnungsphase' multiply defined.
 LaTeX Warning: Label `fig: Öffnungsphase' multiply defined.
 
 
-LaTeX Warning: Label `Vollständige Linerarkombination zur Geburtsprognose' mul
-tiply defined.
-
-
 LaTeX Warning: Label `tab: Glossareintrag zu Vorkalbeperiode' multiply defined.
 
 
@@ -990,18 +986,18 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 32.
 Package tocbasic Info: Using my definition of `\numberline' on input line 33.
 Package tocbasic Info: Using my definition of `\numberline' on input line 34.
 Package tocbasic Info: Using my definition of `\numberline' on input line 35.
-Package tocbasic Info: Using my definition of `\numberline' on input line 36.
-Package tocbasic Info: Using my definition of `\numberline' on input line 37.
-Package tocbasic Info: Using my definition of `\numberline' on input line 38.
 Package tocbasic Info: Using my definition of `\numberline' on input line 39.
 Package tocbasic Info: Using my definition of `\numberline' on input line 40.
 Package tocbasic Info: Using my definition of `\numberline' on input line 41.
 Package tocbasic Info: Using my definition of `\numberline' on input line 42.
 Package tocbasic Info: Using my definition of `\numberline' on input line 43.
+Package tocbasic Info: Using my definition of `\numberline' on input line 44.
 Package tocbasic Info: Using my definition of `\numberline' on input line 45.
 Package tocbasic Info: Using my definition of `\numberline' on input line 46.
-Package tocbasic Info: Using my definition of `\numberline' on input line 57.
-Package tocbasic Info: Using my definition of `\numberline' on input line 58.
+Package tocbasic Info: Using my definition of `\numberline' on input line 48.
+Package tocbasic Info: Using my definition of `\numberline' on input line 49.
+Package tocbasic Info: Using my definition of `\numberline' on input line 60.
+Package tocbasic Info: Using my definition of `\numberline' on input line 61.
 )
 \tf@toc=\write4
 \openout4 = `Mueller-Dominique_BT.toc'.
@@ -1834,7 +1830,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [52 <./Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg>]
-<Grafiken/entwicklung/23ShapeAnalysis.jpg, id=617, 1027.84pt x 770.88pt>
+<Grafiken/entwicklung/23ShapeAnalysis.jpg, id=618, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/23ShapeAnalysis.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/23ShapeAnalysis.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/23ShapeAnalysis.jpg  used on inpu
@@ -1850,26 +1846,63 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [53 <./Grafiken/entwicklung/22AngleCorrectur.jpg>]
-<Grafiken/entwicklung/24ExtentDemonstration.jpg, id=625, 1027.84pt x 770.88pt>
-File: Grafiken/entwicklung/24ExtentDemonstration.jpg Graphic file (type jpg)
-<use Grafiken/entwicklung/24ExtentDemonstration.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/24ExtentDemonstration.jpg  used o
-n input line 303.
-(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 303--304
- [] 
- []
+LaTeX Warning: Reference `fig :Verhältnis zwischen Konturfläche und der Fläc
+he des Rechtecks, welches die Kontur einschliesst' on page 54 undefined on inpu
+t line 301.
 
-) (./Chapter5.tex
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [54 <./Grafiken/entwicklung/23ShapeAnalysis.jpg>]
+<Grafiken/entwicklung/24ExtentDemonstration.jpg, id=631, 1027.84pt x 770.88pt>
+File: Grafiken/entwicklung/24ExtentDemonstration.jpg Graphic file (type jpg)
+<use Grafiken/entwicklung/24ExtentDemonstration.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/24ExtentDemonstration.jpg  used o
+n input line 315.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 315--316
+ [] 
+ []
+
+<Grafiken/entwicklung/25ExtentDemonstration.jpg, id=632, 1027.84pt x 770.88pt>
+File: Grafiken/entwicklung/25ExtentDemonstration.jpg Graphic file (type jpg)
+<use Grafiken/entwicklung/25ExtentDemonstration.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/25ExtentDemonstration.jpg  used o
+n input line 323.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 323--324
+ [] 
+ []
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [55 <./Grafiken/entwicklung/24ExtentDemonstration.jpg>]
+<Grafiken/entwicklung/26ExtentDemonstration.jpg, id=642, 1027.84pt x 770.88pt>
+File: Grafiken/entwicklung/26ExtentDemonstration.jpg Graphic file (type jpg)
+<use Grafiken/entwicklung/26ExtentDemonstration.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/26ExtentDemonstration.jpg  used o
+n input line 331.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 331--332
+ [] 
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[56 <./Grafiken/entwicklung/25ExtentDemonstration.jpg>]) (./Chapter5.tex
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[57 <./Grafiken/entwicklung/26ExtentDemonstration.jpg>]
 chapter 5.
 LaTeX Font Info:    Trying to load font information for OMS+pnc on input line 1
 7.
@@ -1884,7 +1917,7 @@ Overfull \hbox (20.2243pt too wide) in paragraph at lines 24--33
 -tu-ren. cv2.findContours(thresholded_-
  []
 
-[56
+[58
 
 ]
 Overfull \hbox (48.51074pt too wide) in paragraph at lines 45--48
@@ -1896,17 +1929,17 @@ nen: thres-hol-ded = cv2.adaptiveThreshold(filtered
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[57]) (./Chapter6.tex
+[59]) (./Chapter6.tex
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[58]
+[60]
 chapter 6.
-) (./Chapter7.tex [59
+) (./Chapter7.tex [61
 
 ]
 chapter 7.
-) [60
+) [62
 
 ] (./Affirmation.tex
 chapter without number
@@ -1930,12 +1963,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<Grafiken/unterschrift.jpg, id=670, 77.088pt x 35.1714pt>
+<Grafiken/unterschrift.jpg, id=689, 77.088pt x 35.1714pt>
 File: Grafiken/unterschrift.jpg Graphic file (type jpg)
 <use Grafiken/unterschrift.jpg>
 Package pdftex.def Info: Grafiken/unterschrift.jpg  used on input line 14.
 (pdftex.def)             Requested size: 113.81102pt x 51.92726pt.
-) [61
+) [63
 
 
  <./Grafiken/unterschrift.jpg>]
@@ -1958,7 +1991,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 18.
 Package tocbasic Info: Using my definition of `\numberline' on input line 19.
 Package tocbasic Info: Using my definition of `\numberline' on input line 20.
 Package tocbasic Info: Using my definition of `\numberline' on input line 22.
- [62
+ [64
 
 ]
 Package tocbasic Info: Using my definition of `\numberline' on input line 23.
@@ -1983,7 +2016,9 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 41.
 Package tocbasic Info: Using my definition of `\numberline' on input line 42.
 Package tocbasic Info: Using my definition of `\numberline' on input line 43.
 Package tocbasic Info: Using my definition of `\numberline' on input line 44.
-Package tocbasic Info: Using my definition of `\numberline' on input line 50.
+Package tocbasic Info: Using my definition of `\numberline' on input line 45.
+Package tocbasic Info: Using my definition of `\numberline' on input line 46.
+Package tocbasic Info: Using my definition of `\numberline' on input line 52.
 )
 \tf@lof=\write5
 \openout5 = `Mueller-Dominique_BT.lof'.
@@ -1992,7 +2027,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 50.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[63]
+[65]
 Package tocbasic Info: character protrusion at lot deactivated on input line 17
 1.
  (./Mueller-Dominique_BT.lot
@@ -2022,7 +2057,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 32.
 \openout6 = `Mueller-Dominique_BT.lot'.
 
  (./Bibliography.tex
-(./Mueller-Dominique_BT.bbl [64
+(./Mueller-Dominique_BT.bbl [66
 
 ]
 Overfull \hbox (25.91948pt too wide) in paragraph at lines 4--7
@@ -2093,7 +2128,7 @@ Class scrbook Warning: deprecated old font command `\bf' used.
 (scrbook)              `\bf' yourself you should replace it, e.g., by
 (scrbook)              `\normalfont \bfseries ' on input line 60.
 
-[65
+[67
 
 ]
 
@@ -2148,7 +2183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--98
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[66]
+[68]
 chapter without number
 ) (./Appendix-Glossary.tex
 Overfull \hbox (32.53766pt too wide) in paragraph at lines 11--30
@@ -2237,17 +2272,9 @@ Overfull \hbox (32.53766pt too wide) in paragraph at lines 260--276
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Appendix-Documentation.tex [67
+) (./Appendix-Documentation.tex [69
 
 ]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[68]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[69]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -2256,6 +2283,14 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [71]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[72]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[73]
 Overfull \hbox (4.08488pt too wide) in paragraph at lines 11--28
 [][] 
  []
@@ -2269,7 +2304,7 @@ Overfull \hbox (16.08488pt too wide) in paragraph at lines 38--51
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[72
+[74
 
 ]
 Overfull \hbox (47.33986pt too wide) in paragraph at lines 71--72
@@ -2281,7 +2316,7 @@ tall)^^P
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[73]
+[75]
 Overfull \hbox (17.06929pt too wide) in paragraph at lines 107--108
 [] \T1/pcr/m/n/10.95 echo ^^Psource /usr/local/bin/virtualenvwrapper.sh^^P$\OML
 /cmm/m/it/10.95 >$$>$  \T1/pcr/m/n/10.95 /.bash_-
@@ -2308,7 +2343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[74]
+[76]
 Overfull \hbox (3.90865pt too wide) in paragraph at lines 161--162
 []\T1/pnc/m/n/10.95 (-20) Spyder �ff-nen und in den Vor-ein-stel-lun-gen den Me
 nu-punkt ^^PPython-Interpreter^^P
@@ -2318,7 +2353,7 @@ nu-punkt ^^PPython-Interpreter^^P
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 []|[][]$\T1/pcr/m/n/10.95 opencv-[]python-[]tutroals . readthedocs . io /
  []
@@ -2332,8 +2367,8 @@ Overfull \hbox (32.93764pt too wide) in paragraph at lines 172--186
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[76]
-<Grafiken/mmDomain.jpg, id=886, 4301.06876pt x 3796.1825pt>
+[78]
+<Grafiken/mmDomain.jpg, id=906, 4301.06876pt x 3796.1825pt>
 File: Grafiken/mmDomain.jpg Graphic file (type jpg)
 <use Grafiken/mmDomain.jpg>
 Package pdftex.def Info: Grafiken/mmDomain.jpg  used on input line 194.
@@ -2342,7 +2377,7 @@ Package pdftex.def Info: Grafiken/mmDomain.jpg  used on input line 194.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[77
+[79
 
  <./Grafiken/mmDomain.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
@@ -2361,10 +2396,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17640 strings out of 492164
- 286871 string characters out of 6129088
+ 17666 strings out of 492164
+ 287953 string characters out of 6129088
  652197 words of memory out of 5000000
- 21146 multiletter control sequences out of 15000+600000
+ 21162 multiletter control sequences out of 15000+600000
  59533 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,13n,72p,10079b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2380,10 +2415,10 @@ xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/t
 ype1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrs
 bk/uncr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><
 c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Mueller-Dominique_BT.pdf (81 pages, 12339326 bytes).
+Output written on Mueller-Dominique_BT.pdf (83 pages, 12883384 bytes).
 PDF statistics:
- 1128 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
- 232 named destinations out of 1000 (max. 500000)
- 35385 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1149 PDF objects out of 1200 (max. 8388607)
+ 977 compressed objects within 10 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 35395 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -46,7 +46,7 @@ wobei:  $ x \:  \varepsilon \: \{0,1\} $ und $\kappa = \beta = \{ \:  m \: | \: 
 
 Das Ergebnis dieser Rechenoperation ergibt wie bereits erwähnt die qualitative Situationsbewertung $v$, welche mit einem Schwellwert verglichen wird. Dies wird formal wie folgt ausgedrückt:
 
-\begin{equation}\label{Vollständige Linerarkombination zur Geburtsprognose}
+\begin{equation}\label{Vollständige Linerarkombination zur Geburtsprognose: Schwellwertanalyse}
 y = g(v) =\begin{cases}
 			1,\: wenn \: v > q\\
 			0,\: wenn \: v \leq q
@@ -265,7 +265,7 @@ Da nun lediglich äussere Konturen detektiert werden, dürfen diese Konturen mit
 Aus der Domänenanalyse und Experteninterviews hat sicher ergeben, dass seitliches Liegen ein starkes Geburtsanzeichen ist und entsprechend detektiert werden muss. Die Seitenlage charakterisiert sich unter anderem mit gestreckten Beinen. Um diese zu erkennen, 
 Um die detektierten Konturen weiter einzugrenzen, werden diese nach entsprechenden Winkeln gefiltert. 
 
-
+\subsubsection{Erkennung der Beine anhand von Winkel}
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=1.8]{Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg}
@@ -282,7 +282,7 @@ Dabei entspricht das ungefähr einer Rotation des Bildes... blbla gemäss Notize
 	\caption{Ergebnisse nach Filterung der Konturen nach Winkel} 
 	\label{fig: Ergebnisse nach Filterung der Konturen nach Winkel} 
 \end{figure}
-
+\subsubsection{Erkennung der Beine anhand von Extent}
 Um diese Ergebnisse weiter zu analysieren, wurde mittels \texttt{minAreaRect()} ein für jede Kontur das Rechteck ermittelt, welches mit der kleinsten Fläche sämtliche Punkte der Kontur einschliesst \ref{fig: Rechteck mit kleinsten Fläche, welches die Kontur einschliesst}.  
 \begin{figure}[H]
 	\center
@@ -291,16 +291,49 @@ Um diese Ergebnisse weiter zu analysieren, wurde mittels \texttt{minAreaRect()} 
 	\label{fig: Rechteck mit kleinsten Fläche, welches die Kontur einschliesst} 
 \end{figure}
 
-Bei Betrachtung dieser Ergebnisse fällt auf, dass sich die Beine der Kuh insbesondere bei zwei Eigenschaften stark von der weiteren, unerwünschten Kontur unterscheidet. 
+Bei Betrachtung dieser Rechtecke stellt der Autor die Vermutung auf, dass sich die Beine der Kuh insbesondere bei zwei Eigenschaften stark von der weiteren, unerwünschten Kontur unterscheidet. 
 
-1. Während die Rechtecke, welche die Beine einschliessen langgezogen sind, ist das andere Rechteck weniger langgezogen. Das Verhältnis zwischen der Höhe und der Breite der Rechtecke (engl: "Aspect Ratio") könnte also weitere Hinweise liefern.
 
-2. Das Verhältnis zwischen der Fläche der Kontur (der Beine) und des Rechtecks unterscheided sich zudem stark (engl: Extent). Abbildung \ref{fig :Verhältnis zwischen Konturfläche und der Fläche des Rechtecks, welches die Kontur einschliesst} verdeutlicht dies.
+
+Zuerst wird da Verhältnis zwischen der Fläche der erkannten Kontur und der Fläche des Rechtecks, das die Kontur einschliesst betrachtet. Dieses Verhältnis wird nachfolgend Extent genannt.
+
+
+Abbildung \ref{fig :Verhältnis zwischen Konturfläche und der Fläche des Rechtecks, welches die Kontur einschliesst} verdeutlicht, dieses Verhältnis zwischen der roten Flächen und der Fläche der schwarzen Rechtecke.  Der Autor erwartet, dass die Kontur der Beine gegenüber dem darum gebildeten Rechteck klein ist. Entsprechend wird für als Extent bei Beinen einen tiefen Wert angenommen im Vergleich zum Wert des Extent bei anderen Figuren. Dementsprechend wäre die Definition eines Maximalen Schwellwertes denkbar, die ermittelt, ob es sich bei einer betrachteten Kontur um die Beine handelt. 
+
+
+
+\begin{equation}\label{Extent}
+Extent =  \frac{Fl\ddot{a}che\ der\ Kontur}{Fl\ddot{a}che\  umschliessendes\  Rechteck}  
+\end{equation}
+
+Nun wird als Schwellwert für Extent \texttt{0.35} angenommen und entsprechend werden nur noch Konturen berücksichtigt, welche unterhalb dieses Werts liegen. In Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Winkel und Extent}sind alle Konturen mit ${Extent < 0.35}$ rot und alle Konturen mit $Extent \geq 0.35 $ grün eingefärbt. Der Autor stellt fest, dass der Wert für den Extent der unerwünschten Kontur zwischen den beiden Extenten der beiden Konturen der Beine liegt. Also ist in diesem Bild eine Klassifikation von Beinen und unerwünschten Konturen nicht möglich. 
+
+\begin{figure}[H]
+	
+	
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/24ExtentDemonstration.jpg}
+	\caption{Veranschaulichung der Konturfläche in roter Farbe und des umschliessenden Rechtecks mit schwarzem Rahmen } 
+	\label{fig:Veranschaulichung der Konturfläche in roter Farbe und des umschliessenden Rechtecks mit schwarzem Rahmen} 
+\end{figure}
 
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/24ExtentDemonstration.jpg}
-	\caption{Verhältnis zwischen Konturfläche und der Fläche des Rechtecks, welches die Kontur einschliesst } 
-	\label{fig :Verhältnis zwischen Konturfläche und der Fläche des Rechtecks, welches die Kontur einschliesst} 
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/25ExtentDemonstration.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Winkel und Extent } 
+	\label{fig: Ergebnis der Filterung der Konturen nach Winkel und Extent} 
 \end{figure}
+
+Um die Klassifikation mittels Extent weiter zu verfolgen, wird mit dem Schwellwert \texttt{35} eine Klassifikation sämtlicher Konturen vorgenommen. Also auch der Konturen, welche bereits aufgrund des Winkels klassifiziert wurden. Das Ergebnis ist in Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} sichtbar. Nach wie vor sind Konturen mit \texttt{Extent < 0.35} rot und alle Konturen mit \texttt{Extent \geq 0.35} grün eingefärbt. Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} veranschaulicht, dass dennoch sechs von acht Konturen korrekt klassifiziert wurden. Auf Basis dessen entscheided sich der Autor, eine Filterung der Konturen umzusetzen mit dem Schwellwert  \texttt{40}. Dies erlaubt, Konturen wie den Kopf der Kuh auszuschliessen und macht dementsprechend das Ergebnis stabiler.
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/26ExtentDemonstration.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Extent } 
+	\label{fig: Ergebnis der Filterung der Konturen nach Extent} 
+\end{figure}
+\subsubsection{Erkennung der Beine anhand von Aspect Ratio}
+1. Während die Rechtecke, welche die Beine einschliessen langgezogen sind, ist das andere Rechteck weniger langgezogen. Das Verhältnis zwischen der Höhe und der Breite der Rechtecke (engl: "Aspect Ratio") könnte also weitere Hinweise liefern.	
+	
+
+
