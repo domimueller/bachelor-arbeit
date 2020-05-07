@@ -325,7 +325,7 @@ Nun wird als Schwellwert für Extent \texttt{0.35} angenommen und entsprechend w
 	\label{fig: Ergebnis der Filterung der Konturen nach Winkel und Extent} 
 \end{figure}
 
-Um die Klassifikation mittels Extent weiter zu verfolgen, wird mit dem Schwellwert \texttt{35} eine Klassifikation sämtlicher Konturen vorgenommen. Also auch der Konturen, welche bereits aufgrund des Winkels klassifiziert wurden. Das Ergebnis ist in Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} sichtbar. Nach wie vor sind Konturen mit \texttt{Extent < 0.35} rot und alle Konturen mit \texttt{Extent \geq 0.35} grün eingefärbt. Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} veranschaulicht, dass dennoch sechs von acht Konturen korrekt klassifiziert wurden. Auf Basis dessen entscheided sich der Autor, eine Filterung der Konturen umzusetzen mit dem Schwellwert  \texttt{40}. Dies erlaubt, Konturen wie den Kopf der Kuh auszuschliessen und macht dementsprechend das Ergebnis stabiler.
+Um die Klassifikation mittels Extent weiter zu verfolgen, wird mit dem Schwellwert \texttt{35} eine Klassifikation sämtlicher Konturen vorgenommen. Also auch der Konturen, welche bereits aufgrund des Winkels klassifiziert wurden. Das Ergebnis ist in Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} sichtbar. Nach wie vor sind Konturen mit \texttt{Extent < 0.35} rot und alle Konturen mit \texttt{Extent >= 0.35} grün eingefärbt. Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} veranschaulicht, dass dennoch sechs von acht Konturen korrekt klassifiziert wurden. Auf Basis dessen entscheided sich der Autor, eine Filterung der Konturen umzusetzen mit dem Schwellwert  \texttt{40}. Dies erlaubt, Konturen wie den Kopf der Kuh auszuschliessen und macht dementsprechend das Ergebnis stabiler.
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=0.43]{Grafiken/entwicklung/26ExtentDemonstration.jpg}
@@ -333,7 +333,11 @@ Um die Klassifikation mittels Extent weiter zu verfolgen, wird mit dem Schwellwe
 	\label{fig: Ergebnis der Filterung der Konturen nach Extent} 
 \end{figure}
 \subsubsection{Erkennung der Beine anhand von Aspect Ratio}
-1. Während die Rechtecke, welche die Beine einschliessen langgezogen sind, ist das andere Rechteck weniger langgezogen. Das Verhältnis zwischen der Höhe und der Breite der Rechtecke (engl: "Aspect Ratio") könnte also weitere Hinweise liefern.	
+
+Rechtecke, welche die Beine der Kuh einschliessen sind langgezogen. Der Autor überprüft nun die Vermutung, dass diese Eigenschaft dabei hilf, Beine von unwichtigen Konturen zu unterscheiden. Das Verhältnis zwischen Breite und Höhe der Rechtecke (nachfolgend Aspect Ratio genannt) liefert Informationen darüber, wie langgezogen ein Rechteck ist.	
 	
+\begin{equation}\label{Extent}
+Aspect Ratio =  \frac{Breite}{H\ddot{}he}  
+\end{equation}
 
 

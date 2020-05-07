@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  7 MAY 2020 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  7 MAY 2020 04:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,6 +746,9 @@ LaTeX Warning: Label `fig: Öffnungsphase' multiply defined.
 
 
 LaTeX Warning: Label `fig: Öffnungsphase' multiply defined.
+
+
+LaTeX Warning: Label `Extent' multiply defined.
 
 
 LaTeX Warning: Label `tab: Glossareintrag zu Vorkalbeperiode' multiply defined.
@@ -1963,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<Grafiken/unterschrift.jpg, id=689, 77.088pt x 35.1714pt>
+<Grafiken/unterschrift.jpg, id=690, 77.088pt x 35.1714pt>
 File: Grafiken/unterschrift.jpg Graphic file (type jpg)
 <use Grafiken/unterschrift.jpg>
 Package pdftex.def Info: Grafiken/unterschrift.jpg  used on input line 14.
@@ -2368,7 +2371,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [78]
-<Grafiken/mmDomain.jpg, id=906, 4301.06876pt x 3796.1825pt>
+<Grafiken/mmDomain.jpg, id=907, 4301.06876pt x 3796.1825pt>
 File: Grafiken/mmDomain.jpg Graphic file (type jpg)
 <use Grafiken/mmDomain.jpg>
 Package pdftex.def Info: Grafiken/mmDomain.jpg  used on input line 194.
@@ -2396,10 +2399,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17666 strings out of 492164
- 287953 string characters out of 6129088
+ 17665 strings out of 492164
+ 287843 string characters out of 6129088
  652197 words of memory out of 5000000
- 21162 multiletter control sequences out of 15000+600000
+ 21160 multiletter control sequences out of 15000+600000
  59533 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,13n,72p,10079b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2415,10 +2418,10 @@ xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/t
 ype1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrs
 bk/uncr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><
 c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Mueller-Dominique_BT.pdf (83 pages, 12883384 bytes).
+Output written on Mueller-Dominique_BT.pdf (83 pages, 12904397 bytes).
 PDF statistics:
- 1149 PDF objects out of 1200 (max. 8388607)
- 977 compressed objects within 10 object streams
- 240 named destinations out of 1000 (max. 500000)
+ 1151 PDF objects out of 1200 (max. 8388607)
+ 979 compressed objects within 10 object streams
+ 241 named destinations out of 1000 (max. 500000)
  35395 words of extra memory for PDF output out of 35830 (max. 10000000)
 
