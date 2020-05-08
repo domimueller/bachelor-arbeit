@@ -275,6 +275,7 @@ Um die detektierten Konturen weiter einzugrenzen, werden diese nach entsprechend
 
 
 Dabei entspricht das ungefähr einer Rotation des Bildes... blbla gemäss Notizen
+noch erklären, dass ich für positiven und negativen winkel genau dasselbe wiederholt habe.
 
 \begin{figure}[H]
 	\center
@@ -339,5 +340,43 @@ Rechtecke, welche die Beine der Kuh einschliessen sind langgezogen. Der Autor ü
 \begin{equation}\label{Extent}
 Aspect Ratio =  \frac{Breite}{H\ddot{}he}  
 \end{equation}
+Damit der Vergleich der Aspect Ratio einfacher ist wird die Formel etwas angepasst.
+\begin{equation}\label{Extent}
+Aspect Ratio =  \frac{Lange \ Seite}{kurze \ Seite}  
+\end{equation}
+Durch Filterung der Konturen mit dem Schwellwert \texttt{1.5} können Konturen demnach gefiltert werden, wenn deren umschliessendes Rechteck einem Quadrat ähnlich sieht. Das Ergebnis dieser Filterung ist in Abbildung \ref{{fig: Ergebnis der Filterung der Konturen nach Aspect Ratio}} sichtbar.
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/27AspectRatio.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Aspect Ratio } 
+	\label{fig: Ergebnis der Filterung der Konturen nach Aspect Ratio} 
+\end{figure}
+
+Wenn man die Resultate der Filterung durch Winkel, Extent und Aspect Ratio kombiniert, erreicht man das Resultat gemäss Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}. Dabei werden Winkel zwischen 80 und 110 Grad, Extent unter 0.4 und Aspect Ratios über 1.5 berücksichtigt.
 
 
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/28AngleAspectExtent.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio} 
+	\label{fig: Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio} 
+\end{figure}
+
+Nun werden vier Konturen als potentielle Konuturen von Beinen bei seitlichem Liegen erkannt. Wünschenswert wäre nun, diese Auswahl weiter einzugrenen. Nun ist es wünschenswert, eine Gemeinsamkeit Konturen der Beine der mittleren Kuh zu erkennen. Um die beiden Figuren zu vergleichen, wurde die Funktion \texttt{matchShapes()} eingesetzt. Dabei wurde jede Kontur mit jeder anderen Kontur verglichen und zwei sehr ähnliche Figuren wurden ausgewählt. Leider hat der Algorithmus nicht das gewünschte Resultat bewirkt (Abbildung \ref{fig: Ergebnis der Shape Matching}). 
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/29ShapeMatching.jpg}
+	\caption{Ergebnis der Shape Matching} 
+	\label{fig: Ergebnis der Shape Matching} 
+\end{figure}
+
+Um sicherzustellen, dass dieses Resultat nicht auf die Winkel der Konturen zurückzuführen sind (die Winkel wurden ja bereits bereinigt), verschiebt der Autor sämtliche Winkel auf 60 Grad und vergleicht die Konturen wieder mit \texttt{matchShapes()} und Schwellwert 2. Das Ergebnis ist dasselbe, die Klassifikation kann zu diesem Zeitpunkt nicht mehr verbessert werden. 
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/30ShapeMatching.jpg}
+	\caption{Ergebnis der Shape Matching und Korrektur der Winkel} 
+	\label{fig: Ergebnis der Shape Matching und Korrektur der Winkel} 
+\end{figure}
+
+
+Mit einem Schwellwert von 3 kann jedoch das Resultat weiter stabilisiert werden.
