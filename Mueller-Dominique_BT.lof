@@ -23,33 +23,36 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces Lösungsdokumentation der Pakete Message-Configuration zur Konfiguration und Message Posting zum Versand von Benachrichtigungen.}}{32}{figure.4.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Beispielbild als Ausgangslage zur Veranschaulichung des Vorgehens}}{35}{figure.4.18}%
 \contentsline {figure}{\numberline {19}{\ignorespaces Vergleich der Histogramme vor und nach Bildbearbeitung}}{36}{figure.4.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Binärbild, welches den Bereich der Lampe weiss darstellt}}{37}{figure.4.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Binärbild, welches den Bereich des Stallbodens und Holzträgers weiss darstellt}}{38}{figure.4.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Binärbild, welches die vorherigen Binärbilder von unwichtigen Regionen kombiniert}}{39}{figure.4.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Unwichtige Bereiche als Konturen}}{40}{figure.4.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Unwichtige Bereiche als Polygone }}{41}{figure.4.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Unwichtige Bereiche als konvexe Hülle}}{42}{figure.4.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Unwichtige Bereiche als Kreise }}{43}{figure.4.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Unwichtige Bereiche als Rechtecke}}{44}{figure.4.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Binärbild, welches aus dem Ausgangsbild erstellt wurde}}{45}{figure.4.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Ausgangsbild mit rot eingefärbten Konturen}}{46}{figure.4.29}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Binärbild vom Originalbild als Resultat vom Schwellwertverfahren}}{38}{figure.4.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Ausgangsbild mit rot eingefärbten Konturen}}{39}{figure.4.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Binärbild stellt den Bereich der Lampe weiss dar}}{40}{figure.4.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Binärbild zeigt den Bereich des Stallbodens und Holzträgers}}{41}{figure.4.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Binärbild zeigt die als unwichtig identifizierten Bereiche}}{41}{figure.4.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Unwichtige Bereiche als Konturen}}{42}{figure.4.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Unwichtige Bereiche als Polygone }}{43}{figure.4.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Unwichtige Bereiche als konvexe Hülle}}{44}{figure.4.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Unwichtige Bereiche als Kreise }}{45}{figure.4.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Unwichtige Bereiche als Rechtecke}}{46}{figure.4.29}%
 \contentsline {figure}{\numberline {30}{\ignorespaces Versuch, aus geglättetem und aufgehelltem Bild wichtige Bereiche zu detektieren}}{47}{figure.4.30}%
 \contentsline {figure}{\numberline {31}{\ignorespaces Versuch, aus nicht geglättetem Bild wichtige Bereiche zu detektieren}}{48}{figure.4.31}%
 \contentsline {figure}{\numberline {32}{\ignorespaces Ergebnisse nach angepasster Konfiguration des Schwellwertverfahrens}}{49}{figure.4.32}%
 \contentsline {figure}{\numberline {33}{\ignorespaces Ergebnisse nach angepasster Konfiguration des des Contour Finders}}{50}{figure.4.33}%
 \contentsline {figure}{\numberline {34}{\ignorespaces Konturen mit Farbe gefüllt}}{51}{figure.4.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Veranschaulichung zur Analyse der Winkel}}{52}{figure.4.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Ergebnisse nach Filterung der Konturen nach Winkel}}{53}{figure.4.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Rechteck mit kleinsten Fläche, welches die Kontur einschliesst}}{54}{figure.4.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Veranschaulichung der Konturfläche in roter Farbe und des umschliessenden Rechtecks mit schwarzem Rahmen }}{55}{figure.4.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel und Extent }}{56}{figure.4.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Ergebnis der Filterung der Konturen nach Extent }}{57}{figure.4.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Ergebnis der Filterung der Konturen nach Aspect Ratio }}{58}{figure.4.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}}{59}{figure.4.42}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Ausgangslage vor der Analyse und Filterung der Konturen}}{52}{figure.4.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Veranschaulichung zur Analyse der Winkel}}{53}{figure.4.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Ergebnisse nach Filterung der Konturen nach Winkel}}{54}{figure.4.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel und Extent }}{56}{figure.4.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Ergebnis der Filterung der Konturen nach Extent:SCHWELLWERT = 0.5 }}{57}{figure.4.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Ergebnis der Filterung der Konturen nach Aspect Ratio }}{58}{figure.4.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel und Aspect Ratio}}{59}{figure.4.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Ergebnis der Filterung der Konturen nach Extent und Aspect Ratio}}{60}{figure.4.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}}{61}{figure.4.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Ergebnis der Shape Matching}}{62}{figure.4.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Ergebnis der Shape Matching und Korrektur der Winkel}}{63}{figure.4.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {43}{\ignorespaces Mindmap als Entwurf für die Modellierung der Domäne. Farbcodierung gemäss Tabelle }}{82}{figure.7.43}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Mindmap als Entwurf für die Modellierung der Domäne. Farbcodierung gemäss Tabelle }}{86}{figure.7.46}%
 \contentsfinish 

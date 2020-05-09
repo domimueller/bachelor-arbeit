@@ -101,16 +101,18 @@ Um einen stabilen Betrieb von elektronischen Geräten und dem Netzwerk auf einem
 
 
 \section{Umsetzung in Entwicklung}
-Um die schrittweise Entwicklung und entsprechende Teilergebnisse der Bildbearbeitung zu veranschaulichen, dient die zufällig ausgewählte Abbildung \ref{fig: Bild als Ausgangslage zur Veranschaulichung des Vorgehens} als Ausgangsbild. Dieses Bild wurde vom System erstellt, welches im Rahmen der erwähnten Case-Arbeit entwickelt wurde. Anschliessend wurde das Bild mit der Funktion \texttt{add()} heller gemacht und mit den Funktionen \texttt{createCLAHE()} und \texttt{clahe.apply()} wurde das Histogramm des Bildes geglättet. 
+Um die schrittweise Entwicklung und entsprechende Teilergebnisse der Bildbearbeitung zu veranschaulichen, dient Abbildung \ref{fig: Ausgangslage für die Bildanalyse} als Ausgangsbild. Dieses Bild wurde vom System erstellt, welches im Rahmen der erwähnten Case-Arbeit entwickelt wurde. Anschliessend wurde das Bild mit der Funktion \texttt{add()} heller gemacht und unter Anwendung von \texttt{createCLAHE()} und \texttt{clahe.apply()} wurde das Histogramm des Bildes geglättet. 
 
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=0.43]{Grafiken/entwicklung/1ausgangsbildBericht.jpg}
 	\caption{Beispielbild als Ausgangslage zur Veranschaulichung des Vorgehens} 
-	\label{fig: Bild als Ausgangslage zur Veranschaulichung des Vorgehens}
+	\label{fig: Ausgangslage für die Bildanalyse}
 \end{figure}
 
-Abbildung \ref{fig: Vergleich der Histogramme vor und nach Bildbearbeitung} zeigt auf der linken Seite das Histogramm des Originalbilds und auf der rechten Seite das Histrogramm des aufgehellten und geglätteten Bilds. Dabei fällt auf, dass aufgrund der Aufhellung im Histogramm des Bearbeiteten Bilds mehr Werte im rechten Bereich liegen und aufgrund der Glättung die Anzahl Pixel weniger stark auf einen Bereich konzentriert sind.
+Abbildung \ref{fig: Vergleich der Histogramme vor und nach Bildbearbeitung} zeigt auf der linken Seite das Histogramm des Originalbilds und auf der rechten Seite das Histrogramm des aufgehellten und geglätteten Bilds. Dabei fällt auf, dass aufgrund der Aufhellung des gesamten Bildes im Histogramm der Wertebereich nach rechts verschoben wird. Zudem sind als Folge der Glättung des Histogramms mittels CLAHE\footnote{Contrast Limited Adaptive Histogram Equalization} die Anzahl Pixel weniger stark auf einen Bereich konzentriert. CLAHE ist ein Verfahren, dass für die Glättung von Bildern und Verbesserung des Kontrasts eingesetzt wird. Ein Vorteil der Methode ist, dass aufgrund einer parametrisierbaren Begrenzung der Kontrastverstärkung die Überbetonung von Rausch in relativ homogenen Regionen des Bilds verhindert wird \citep[S. 313]{FernandezVillan2019}.
+
+Das Bild \ref{fig: Ausgangslage für die Bildanalyse} wird nun unter Anwendung von diversen Methoden aus der Bildanalyse und der Software-Bibliothek OpenCV bearbeitet und analysiert, um daraus Information zum Geburtsverlauf eines Kalbes zu gewinnen. In der vorliegenden Arbeit liegt der Fokus in der Detektierung von seitlichem Liegen, da die Erkennung dieses Geburtsmerkmals einen hohen Mehrwert bringt. 
 
 \begin{figure}[H]
 	\center
@@ -120,36 +122,65 @@ Abbildung \ref{fig: Vergleich der Histogramme vor und nach Bildbearbeitung} zeig
 \end{figure}
 
 \subsection{Detektierung von unwichtigen Bereichen im Bild}
-In einem ersten Schritt setzt sich der Autor zum Ziel, unwichtige Bereiche im Bild zu identifizieren. Dies umfasst Bereiche, welche mit hoher Wahrscheinlichkeit nicht Teile einer Kuh oder eines Kalbs zeigen. Im betrachteten Bild wird zuerst versucht, die Lampe, den schwach beleuchteten Teil des Stallbodens und den Holzträger zu erkennen. Die Farbwerte dieser Teile im Bild unterscheiden sich stark zu den meisten Farben im Kuhfell.
+Um das Potential aus der Detektierung von unwichtigen Bereichen zu veranschaulichen, wird in einem ersten Schritt ein Binärbild des Originalbilds erstellt. Dazu wird die Funktion \texttt{threshold()} mit dem Verfahrentyp \texttt{THRESH_BINARY} und dem Wert \texttt{40} als Schwellwert eingesetzt. OpenCV ermöglicht mit der Funktion \texttt{threshold()}, die Segmentierung des Bild. Das Bild wird in eine Repräsentation umgewandelt, welche sich für die Weiterverarbeitung besser eignet als die ursprüngliche. \cite[S.328-335]{FernandezVillan2019} In der vorliegenden Arbeit basiert die Extraktion von Objekten darauf, dass durch Schwellwertverfahren bestimmte Eigenschaften wie Farben und Ecken extrahiert werden können. Die Auswahl vom Wert \texttt{40} als Schwellwert hat zur Folge, dass Pixel mit einer Intensität kleiner gleich \texttt{40} im resultierenden Bild schwarz dargestellt werden und alle anderen Pixel weiss. Als Bild zur Eingabe dient ein Graustufenbild. Grundsätzlich können mithilfe des Parameter \texttt{maxval} bei Erreichung des Schwellwerts auch Graustufen als Zielwert für einen Pixel zugewiesen werden. Da in der vorliegenden Arbeit das Schwellwertverfahren aber zur zur Vorbereitung für \texttt{findContours()} gemacht wurde, bringt dies keinen Mehrwert. Da die Funktion \texttt{findContours()} sämtliche Pixel, die nicht den Wert \texttt{0} haben, den Wert \texttt{1} zuweist, wird auch ein Bild mit Graustufen als Binärbild behandelt \cite[S. 366]{FernandezVillan2019}. 
 
-Um dies zu erreichen, wird in einem ersten Schritt ein Farbbereich für die Lampe definiert. Um einen Richtwert für diesen Farbwert zu erhalten, wird mithilfe des Grafikprogramms GIMP (Version 2.10, \url{www.gimp.org}) ein Farbwert im Bereich der Lampe ausgelesen. Auf Basis dieses Richtwerts kann anschliessend ein unterer und oberer Schwellwert für die Farbwerte der zu identifizierenden Lampe definiert werden. Diese Schwellwerte werden der Funktion \texttt{inRange()} von OpenCV zwecks Erstellung eines Binärbilds übergeben. Sämtliche Bereiche mit Farbwerten, die sich zwischen den definierten Schwellwerten befinden, werden im resultierenden Bild weiss dargestellt. Diese entsprechen den vermutlich unwichtigen Bereichen im Bild. Alle anderen Bereiche sind im erstellen Binärbild schwarz dargestellt \ref{fig: Binärbild, welches den Bereich des Stallbodens und Holzträgers weiss darstellt}. Dieses Binärbild identifiziert auch einige dunkle Regionen im Deckenbereich als unwichtig.
+\begin{equation}\label{Vollständige Linerarkombination zur Geburtsprognose: Schwellwertanalyse}
+dst(x,y) =\begin{cases}
+maxval,\: if \: src(x,y) > thresh\\
+0\: otherwise
+\end{cases}
+\end{equation}
 
-\begin{figure}[H]
-	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/3binBildLampe.jpg}
-	\caption{Binärbild, welches den Bereich der Lampe weiss darstellt} 
-	\label{fig: Binärbild, welches den Bereich der Lampe weiss darstellt}
-\end{figure}
-
-Dasselbe Vorgehen wird angewendet, um den Bereich des Stallbodens und Holzträgers zu identifizieren.
+Nebst der Funktion \texttt{threshold()} und dem Typ \texttt{THRESH_BINARY} bietet OpenCV weiteren Typen wie \texttt{THRESH_BINARY_INV} oder \texttt{THRESH_TRUNC} und das adaptive Schwellwertverfahren \texttt{adaptiveThreshold()} an. Adaptive Schwellwertverfahren ermöglichen den Einsatz von spezifischen Schwellwerten auf Basis einer Gruppe von benachbarten Pixeln  \cite[S.342 f]{FernandezVillan2019}. Die im Rahmen der Bachlor-Arbeit entwickelte Lösung unterstützt die Parametrisierung dieser Funktionen mittels Enumerations. Diese haben aber für die vorliegende Bildanalyse jedoch keine zentrale Bedeutung und werden deshalb nicht weiter erläutert.
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/4binBildHolz.jpg}
-	\caption{Binärbild, welches den Bereich des Stallbodens und Holzträgers weiss darstellt} 
-	\label{fig: Binärbild, welches den Bereich des Stallbodens und Holzträgers weiss darstellt}
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/8thresholdedMask.jpg}
+	\caption{Binärbild vom Originalbild als Resultat vom Schwellwertverfahren} 
+		\label{fig: Binärbild vom Originalbild als Resultat vom Schwellwertverfahren}
 \end{figure}
-
-Aus diesen zwei Binärbildern wird nun ein Binärbild erstellt, welches sämtliche Regionen weiss darstellt, die in einem oder beiden Bildern bereits weiss sind. Dies bedeutet, dass die in einem oder in beiden Binärbilden als unwichtig identifizierten Bereiche in einem neuen Binärbild kombiniert werden. Um dies zu erreichen, wird die Funktion \texttt{bitwise_or} von OpenCV mit den beiden Binärbildern als Argumente aufgerufen. 
+		
+In diesem Binärbild werden anschliessend mit den Funktionen \texttt{findContours()} und \texttt{drawContours()} Konturen gesucht und im Originalbild eingezeichnet. Die Funktion \texttt{findContours()} wird verwendet, um Konturen in einem Binärbild zu erkennen. Der Algorithmus unterstützt unterschiedliche Modi wie \texttt{RETR_EXTERNAL} für die Beschränkung auf äussere Konturen, \texttt{RETR_LIST} für die Ausgabe sämtlicher Konturen ohne Hierarchie oder \texttt{RETR_TREE} für die zusätzliche Ausgabe von Informationen zur Hierarchie der Konturen. 
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/5binLampeUndHolz.jpg}
-	\caption{Binärbild, welches die vorherigen Binärbilder von unwichtigen Regionen kombiniert} 
-	\label{fig: Binärbild, die vorherigen Binärbilder kombiniert}
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/9thresholdedImage.jpg}
+	\caption{Ausgangsbild mit rot eingefärbten Konturen} 
+	\label{fig: Ausgangsbild mit rot eingefärbten Konturen} 
 \end{figure}
 
-In einem weiteren Schritt können die als unwichtig identifizierten Bereiche als Konturen erkannt und somit ins Ausgangsbild eingezeichnet werden. Um dies zu erreichen, werden die Funktionen \texttt{findContours()} und \texttt{drawContours()} angewendet. Das Resultat ist in Abbildung \ref{fig: Unwichtige Bereiche als Konturen} veranschaulicht.
+Nun ist klar zu erkennen, dass auch Konturen eingezeichnet werden, die klar als unwichtige Bereiche identifizierbar sind. Im vorliegenden Bild betrifft dies in erster Linie die Lampe.
+
+Aus diesem Grund nutzt der Autor die Information über unwichtige Bereiche, um nur noch Konturen zu berücksichtigen, die nicht in diesem Bereich liegen. Dementsprechend wird das in Abbildung \ref{fig: Unwichtige Bereiche als Kreise} dargestellte Bild zur weiteren Analyse verwendet. 
+
+In einem ersten Schritt setzt sich der Autor zum Ziel, unwichtige Bereiche im Bild zu identifizieren. Dies umfasst Bereiche, welche mit hoher Wahrscheinlichkeit nicht Teile einer Kuh oder eines Kalbs zeigen. Die Farbwerte dieser Teile im Bild unterscheiden sich stark zu den meisten Farben im Kuhfell. Im betrachteten Bild wird zuerst versucht, die Lampe, den schwach beleuchteten Teil des Stallbodens und den Holzträger zu erkennen. 
+
+Um dies zu erreichen, wird in einem ersten Schritt ein Farbbereich für die Lampe definiert. Um einen Richtwert für diesen Farbwert zu erhalten, wird mithilfe des Grafikprogramms GIMP (Version 2.10, \url{www.gimp.org}) ein Farbwert im Bereich der Lampe ausgelesen. Auf Basis dieses Richtwerts wird anschliessend ein unterer und oberer Schwellwert für die Farbwerte der zu identifizierenden Lampe festgelegt. Diese Schwellwerte werden der Funktion \texttt{inRange()} von OpenCV zwecks Erstellung eines Binärbilds übergeben. Sämtliche Bereiche mit Farbwerten, die sich zwischen den definierten Schwellwerten befinden, werden im resultierenden Bild weiss dargestellt. Diese entsprechen möglicherweise unwichtigen Bereichen im Bild. Alle anderen Bereiche sind im erstellen Binärbild schwarz dargestellt. Abbildung \ref{fig: Binärbild stellt den Bereich der Lampe weiss dar} zeigt das Binärbild, welches aus diesem Verfahren entsteht. Es ist klar zu erkennen, dass die Bereiche der Lampe weiss und übrige Bereiche schwarz sind. Der Ansatz der Schnur, mit welcher der Schwanz der Kuh an der Decke befestigt wird, ist ebenfalls erkennbar. Dies kann zum momentanen Zeitpunkt jedoch ignoriert werden.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.25]{Grafiken/entwicklung/3binBildLampe.jpg}
+	\caption{Binärbild stellt den Bereich der Lampe weiss dar} 
+	\label{fig: Binärbild stellt den Bereich der Lampe weiss dar}
+\end{figure}
+
+Dasselbe Vorgehen wird angewendet, um den Bereich des Stallbodens und Holzträgers zu identifizieren. Dieses Binärbild identifiziert auch einige dunkle Regionen im Deckenbereich als unwichtig. Das Ergebnis ist in Abbildung \ref{fig: Binärbild zeigt den Bereich des Stallbodens und Holzträgers} abgebildet.
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.25]{Grafiken/entwicklung/4binBildHolz.jpg}
+	\caption{Binärbild zeigt den Bereich des Stallbodens und Holzträgers} 
+	\label{fig: Binärbild zeigt den Bereich des Stallbodens und Holzträgers}
+\end{figure}
+
+Diese zwei Binärbilder werden nun mit dem Ziel weiterverarbeitet, ein Binärbild zu erstellen, welches möglichst viele unwichtige Regionen weiss darstellt. Durch die Funktion \texttt{bitwise_or} werden die Bilder so verknüpft, dass im resultierenden Bild sämtliche Bereiche weiss sind, die in einem der beiden oder in beiden Eingangsbildern weiss sind.
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.25]{Grafiken/entwicklung/5binLampeUndHolz.jpg}
+	\caption{Binärbild zeigt die als unwichtig identifizierten Bereiche} 
+	\label{fig: Binärbild zeigt sämtliche als unwichtig identifizierten Bereiche}
+\end{figure}
+
+Ausgehend von Abbildung \ref{fig: Binärbild zeigt sämtliche als unwichtig identifizierten Bereiche} können die als unwichtig identifizierten Bereiche als Konturen erkannt und im Originalbild eingezeichnet werden. Um dies zu erreichen, werden die Funktionen \texttt{findContours()} und \texttt{drawContours()} angewendet. Dies passiert analog zum Vorgehen bei der Detektierung von unwichtigen Bereichen. Das Resultat ist in Abbildung \ref{fig: Unwichtige Bereiche als Konturen} veranschaulicht. 
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=0.43]{Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg}
@@ -157,9 +188,9 @@ In einem weiteren Schritt können die als unwichtig identifizierten Bereiche als
 	\label{fig: Unwichtige Bereiche als Konturen}
 \end{figure}
 
-Nun gilt es, anhand von diesen als unwichtig identifizierten Konturen möglichst grosse Flächen aus dem Ausgangsbild zu löschen, respektive möglichst grosse Flächen mit schwarzer Farbe zu füllen. Um dies zu erreichen, wurden mehrere Verfahren getestet. Die Abbildungen  \ref{fig: Unwichtige Bereiche als Polygone} bis \ref{fig: Unwichtige Bereiche als Rechtecke} veranschaulichen die entsprechenden Resultate unter Verwendung von OpenCV. In Abbildung \ref{fig: Unwichtige Bereiche als Polygone} wurde die Funktion \texttt{approxPolyDP()} verwendet, um basierend auf den Konturen ein Vieleck zu approximieren. Abbildung \ref{fig: Unwichtige Bereiche als konvexe Hülle} zeigt die Ergebnisse der Funktion \texttt{convexHull()}. Die Abbildung \ref{fig: Unwichtige Bereiche als Kreise} nutzt die Funktion \texttt{minEnclosingCircle()} um Kreise zu finden, welche Konturen mit möglichst geringer Fläche umschliessen. Zuletzt wurden für die Abbildung \ref{fig: Unwichtige Bereiche als Rechtecke} mit der Funktion \texttt{boundingRect()} Rechtecke gebildet, welche die Konturen umschliessen .
+Nun gilt es, auf Basis der als unwichtig identifizierten Konturen möglichst grosse Flächen aus dem Ausgangsbild zu entfernen, respektive möglichst grosse Flächen mit schwarzer Farbe zu füllen. Um dies zu erreichen, werden mehrere Verfahren getestet. Die Abbildungen  \ref{fig: Unwichtige Bereiche als Polygone} bis \ref{fig: Unwichtige Bereiche als Rechtecke} veranschaulichen die entsprechenden Resultate unter Verwendung von OpenCV. In Abbildung \ref{fig: Unwichtige Bereiche als Polygone} wurde \texttt{approxPolyDP()} verwendet, um basierend auf den Konturen ein Vieleck zu approximieren. Die Funktion arbeitet nach dem Douglas-Peucker-Algorithmus, welcher aus einer gegebenen Kontur eine dezimierte Kontur mit weniger Punkten erstellt. Dabei kann der Funktion die maximale Distanz der originalen Kontur und ihrer Approximation als Argument mitgegeben werden \citep[S. 383]{FernandezVillan2019}.  Das Bild \ref{fig: Unwichtige Bereiche als konvexe Hülle} zeigt konvexe Hüllen der Konturen,  die als Ergebnisse der Funktion \texttt{convexHull()} entstehen. Um Kreise zu finden, welche Konturen mit möglichst geringer Fläche umschliessen, wird die Funktion \texttt{minEnclosingCircle()} verwendet (Abbildung \ref{fig: Unwichtige Bereiche als Kreise}). Zuletzt wurden für die Abbildung \ref{fig: Unwichtige Bereiche als Rechtecke} mit der Funktion \texttt{boundingRect()} Rechtecke gebildet, welche die Konturen umschliessen .
 
-Als Vorbereitung für die Durchführung von diesen Verfahren wurde mittels \texttt{contourArea()} jeweils die Fläche der Kontur berechnet und nur berücksichtigt, wenn diese mehr als 200 Pixel umfasst. Dadurch wird erreicht, dass beispielsweise Schatten unterhalb des Schwanzes oder der unterhalb der Beine der Kuh nicht berücksichtigt werden.
+Als Vorbereitung für die Durchführung von diesen Verfahren werden Konturen mit einer Fläche von weniger als 200 Pixel gefiltert und verworfen. Die Fläche von Konturen wird mittels \texttt{contourArea()} berechnet. Durch diese erste Filterung wird erreicht, dass beispielsweise Schatten unterhalb des Schwanzes oder unterhalb der Beine der Kuh erkannt werden.
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=0.43]{Grafiken/entwicklung/7unwichtigePolygone.jpg}
@@ -190,32 +221,13 @@ Als Vorbereitung für die Durchführung von diesen Verfahren wurde mittels \text
 	\label{fig: Unwichtige Bereiche als Rechtecke}
 \end{figure}
 
-Die Verfahren, welche mittels \texttt{minEnclosingCircle()} und \texttt{boundingRect()} angewendet werden, ergeben im vorliegenden Kontext die besten Ergebnisse. Die als unwichtig identifizierte Flächen werden so maximiert und die Fehlerrate (Flächen von Kuh als unwichtig identifiziert) ist gering. Da perfekte Kreise in den Konturen von Kühen und Kälbern nicht vorkommen, entscheided sich der Autor dafür, unwichtige Bereiche als schwarze Kreise einzuzeichnen. Zudem können diese Kreise in der weiteren Bildbearbeitung problemlos als solche erkannt werden.
+Die Verfahren, welche mittels \texttt{minEnclosingCircle()} und \texttt{boundingRect()} angewendet werden, ergeben im vorliegenden Kontext die besten Ergebnisse. Einerseits werden die als unwichtig identifizierte Fläche wird maximiert. Andererseits werden nur sehr kleine Bereiche der Kuh fälschlicherweise als unwichtig eingestuft. Da perfekte Kreise in den Konturen von Kühen und Kälbern nicht vorkommen, entscheidet sich der Autor dafür, unwichtige Bereiche als schwarze Kreise einzuzeichnen. Zudem können diese Kreise in der weiteren Bildbearbeitung problemlos als solche erkannt werden.
 
 \subsection{Detektierung von wichtigen Bereichen im Bild}
 
-Um nun das Potential aus der Detektierung von unwichtigen Bereichen zu veranschaulichen, wird in einem ersten Schritt ein Binärbild des Ausgangsbilds erstellt. Dazu wird die Funktion \texttt{threshold()} mit dem Verfahren \texttt{THRESH_BINARY} und der Zahl \texttt{40} als Schwellwert eingesetzt.
-
-\begin{figure}[H]
-	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/8thresholdedMask.jpg}
-	\caption{Binärbild, welches aus dem Ausgangsbild erstellt wurde} 
-	\label{fig: Binärbild, welches aus dem Ausgangsbild erstellt wurde}
-\end{figure}
-
-In diesem Binärbild werden anschliessend analog zum Vorgehen bei der Detektierung von unwichtigen Bereichen unter Anwendung der Funktionen \texttt{findContours()} und \texttt{drawContours()} Konturen gesucht und im Ausgangsbild eingezeichnet.
 
 
-\begin{figure}[H]
-	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/9thresholdedImage.jpg}
-	\caption{Ausgangsbild mit rot eingefärbten Konturen} 
-	\label{fig: Ausgangsbild mit rot eingefärbten Konturen} 
-\end{figure}
-
-Nun ist klar zu erkennen, dass auch Konturen eingezeichnet werden, die klar als unwichtige Bereiche identifizierbar sind (in erster Linie die Lampe).
-
-Aus diesem Grund nutzt der Autor die Information über unwichtige Bereiche, um nur noch Konturen zu berücksichtigen, die nicht in diesem Bereich liegen. Dementsprechend wird das in Abbildung \ref{label{fig: Unwichtige Bereiche als Kreise}} dargestellte Bild zur weiteren Analyse verwendet. In einem ersten Schritt wird die geglättete und aufgehellte Version dieses Bilds mit dem adaptiven Schwellwertverfahren bearbeitet. Um dies zu erreichen, wird die Funktion \texttt{adaptiveThreshold()} mit den Argumenten \texttt{THRESH_BINARY_INV} und \texttt{ADAPTIVE_THRESH_MEAN_C} aufgerufen. Das Ergebnis dieses Versuchs, wichtige Bereiche des Bilds zu detektieren, ist in Abbildung \ref{{fig: Versuch, aus geglättetem und aufgehelltem Bild wichtige Bereiche zu detektieren}} ersichtlich. 
+In einem ersten Schritt wird die geglättete und aufgehellte Version dieses Bilds mit dem adaptiven Schwellwertverfahren bearbeitet. Um dies zu erreichen, wird die Funktion \texttt{adaptiveThreshold()} mit den Argumenten \texttt{THRESH_BINARY_INV} und \texttt{ADAPTIVE_THRESH_MEAN_C} aufgerufen. Das Ergebnis dieses Versuchs, wichtige Bereiche des Bilds zu detektieren, ist in Abbildung \ref{fig: Versuch, aus geglättetem und aufgehelltem Bild wichtige Bereiche zu detektieren} ersichtlich. 
 
 \begin{figure}[H]
 	\center
@@ -224,7 +236,7 @@ Aus diesem Grund nutzt der Autor die Information über unwichtige Bereiche, um n
 	\label{fig: Versuch, aus geglättetem und aufgehelltem Bild wichtige Bereiche zu detektieren} 
 \end{figure}
 
-Das Ergebnis ist nicht brauchbar, weshalb der Versuch mit denselben Einstellungen aber mit einem nicht geglätteten Bild wiederholt wurde. Das Ergebnis ist in Abbildung \ref{{fig: Versuch, aus nicht geglättetem Bild wichtige Bereiche zu detektieren}} dargestellt und stellt ein besseres Zwischenergebnis dar. Als entsprechende Erkenntnis leitet der Autor ab, dass die Glättung von Histogrammen zwar die Bildqualität und Interpretationsfähigkeit für den Menschen steigert, aber im vorliegenden Kontext auch negativen Einfluss auf das Schwellwertverfahren haben kann.
+Das Ergebnis ist nicht brauchbar, weshalb der Versuch mit denselben Einstellungen aber mit einem nicht geglätteten Bild wiederholt wurde. Das Ergebnis ist in Abbildung \ref{fig: Versuch, aus nicht geglättetem Bild wichtige Bereiche zu detektieren} dargestellt und stellt ein besseres Zwischenergebnis dar. Als entsprechende Erkenntnis leitet der Autor ab, dass die Glättung von Histogrammen zwar die Bildqualität und Interpretationsfähigkeit für den Menschen steigert, aber im vorliegenden Kontext auch negativen Einfluss auf das Schwellwertverfahren haben kann.
 
 \begin{figure}[H]
 	\center
@@ -251,7 +263,7 @@ Es fällt nun auf, dass Flecken innerhalb der Kontur der Kuh erkannt werden. Da 
 
 Dabei unterscheiden sich die Ergebnisse bei der Anwendung von \texttt{findContours()} mit unterschiedlichen Approximationsverfahren wie \texttt{CHAIN_APPROX_SIMPLE}, \texttt{CHAIN_APPROX_TC89_L1}, \texttt{CHAIN_APPROX_TC89_KCOS} von der Deaktivierung der Approximation  nicht wesentlich. Auch unterschiedliche Modi wie \texttt{RETR_LIST} oder \texttt{RETR_CCOMP} für die Identifizierung der Konturen ergeben in diesem Kontext identische Ergebnisse. Es werden jeweils die neun eingezeichneten Konturen identifiziert.
 
-Da nun lediglich äussere Konturen detektiert werden, dürfen diese Konturen mit Farbe gefüllt werden, ohne relevante Informationen über Hierarchien zu vernichten (Abbildung \ref{fig: Konturen mit Farbe gefüllt}). 
+
 
 \begin{figure}[H]
 	\center
@@ -265,10 +277,19 @@ Da nun lediglich äussere Konturen detektiert werden, dürfen diese Konturen mit
 Aus der Domänenanalyse und Experteninterviews hat sicher ergeben, dass seitliches Liegen ein starkes Geburtsanzeichen ist und entsprechend detektiert werden muss. Die Seitenlage charakterisiert sich unter anderem mit gestreckten Beinen. Um diese zu erkennen, 
 Um die detektierten Konturen weiter einzugrenzen, werden diese nach entsprechenden Winkeln gefiltert. 
 
+Da nun lediglich äussere Konturen detektiert werden, dürfen diese Konturen mit Farbe gefüllt werden, ohne relevante Informationen über Hierarchien zu vernichten (Abbildung \ref{fig: Konturen mit Farbe gefüllt und Filterung von Konturen unterhalb Minimalgrösse}). Da nun keine weiteren Konturen mehr gesucht werden (kein Aufruf von \texttt{findContours()}), sind nachfolgend sämtliche dargestellten Bilder bearbeitet, um deren Helligkeit und Kontrast zu erhöhen. Dies wurde unter Anwendung der Funktionen \texttt{add()} und \texttt{createCLAHE()} gemacht . Zudem wurden die schwarze Kreise, welche unwichtige Bereiche des Bildes verdecken entfernt. Dies erhöht die Lesbarkeit des Berichts.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=.43]{Grafiken/entwicklung/20StartImage.jpg}
+	\caption{Ausgangslage vor der Analyse und Filterung der Konturen} 
+	\label{fig: Ausgangslage vor der Analyse und Filterung der Konturen} 
+\end{figure}
+
 \subsubsection{Erkennung der Beine anhand von Winkel}
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=1.8]{Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg}
+	\includegraphics[scale=1.3]{Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg}
 	\caption{Veranschaulichung zur Analyse der Winkel} 
 	\label{fig: Veranschaulichung zur Analyse der Winkel} 
 \end{figure}
@@ -285,12 +306,7 @@ noch erklären, dass ich für positiven und negativen winkel genau dasselbe wied
 \end{figure}
 \subsubsection{Erkennung der Beine anhand von Extent}
 Um diese Ergebnisse weiter zu analysieren, wurde mittels \texttt{minAreaRect()} ein für jede Kontur das Rechteck ermittelt, welches mit der kleinsten Fläche sämtliche Punkte der Kontur einschliesst \ref{fig: Rechteck mit kleinsten Fläche, welches die Kontur einschliesst}.  
-\begin{figure}[H]
-	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/23ShapeAnalysis.jpg}
-	\caption{Rechteck mit kleinsten Fläche, welches die Kontur einschliesst} 
-	\label{fig: Rechteck mit kleinsten Fläche, welches die Kontur einschliesst} 
-\end{figure}
+
 
 Bei Betrachtung dieser Rechtecke stellt der Autor die Vermutung auf, dass sich die Beine der Kuh insbesondere bei zwei Eigenschaften stark von der weiteren, unerwünschten Kontur unterscheidet. 
 
@@ -309,14 +325,7 @@ Extent =  \frac{Fl\ddot{a}che\ der\ Kontur}{Fl\ddot{a}che\  umschliessendes\  Re
 
 Nun wird als Schwellwert für Extent \texttt{0.35} angenommen und entsprechend werden nur noch Konturen berücksichtigt, welche unterhalb dieses Werts liegen. In Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Winkel und Extent}sind alle Konturen mit ${Extent < 0.35}$ rot und alle Konturen mit $Extent \geq 0.35 $ grün eingefärbt. Der Autor stellt fest, dass der Wert für den Extent der unerwünschten Kontur zwischen den beiden Extenten der beiden Konturen der Beine liegt. Also ist in diesem Bild eine Klassifikation von Beinen und unerwünschten Konturen nicht möglich. 
 
-\begin{figure}[H]
-	
-	
-	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/24ExtentDemonstration.jpg}
-	\caption{Veranschaulichung der Konturfläche in roter Farbe und des umschliessenden Rechtecks mit schwarzem Rahmen } 
-	\label{fig:Veranschaulichung der Konturfläche in roter Farbe und des umschliessenden Rechtecks mit schwarzem Rahmen} 
-\end{figure}
+
 
 
 \begin{figure}[H]
@@ -329,8 +338,8 @@ Nun wird als Schwellwert für Extent \texttt{0.35} angenommen und entsprechend w
 Um die Klassifikation mittels Extent weiter zu verfolgen, wird mit dem Schwellwert \texttt{35} eine Klassifikation sämtlicher Konturen vorgenommen. Also auch der Konturen, welche bereits aufgrund des Winkels klassifiziert wurden. Das Ergebnis ist in Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} sichtbar. Nach wie vor sind Konturen mit \texttt{Extent < 0.35} rot und alle Konturen mit \texttt{Extent >= 0.35} grün eingefärbt. Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Extent} veranschaulicht, dass dennoch sechs von acht Konturen korrekt klassifiziert wurden. Auf Basis dessen entscheided sich der Autor, eine Filterung der Konturen umzusetzen mit dem Schwellwert  \texttt{40}. Dies erlaubt, Konturen wie den Kopf der Kuh auszuschliessen und macht dementsprechend das Ergebnis stabiler.
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/26ExtentDemonstration.jpg}
-	\caption{Ergebnis der Filterung der Konturen nach Extent } 
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/26FilteringExtent.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Extent:SCHWELLWERT = 0.5 } 
 	\label{fig: Ergebnis der Filterung der Konturen nach Extent} 
 \end{figure}
 \subsubsection{Erkennung der Beine anhand von Aspect Ratio}
@@ -349,23 +358,39 @@ Durch Filterung der Konturen mit dem Schwellwert \texttt{1.5} können Konturen d
 	\center
 	\includegraphics[scale=0.43]{Grafiken/entwicklung/27AspectRatio.jpg}
 	\caption{Ergebnis der Filterung der Konturen nach Aspect Ratio } 
-	\label{fig: Ergebnis der Filterung der Konturen nach Aspect Ratio} 
+	\label{fig: Ergebnis der Filterung der Konturen nach Aspect Ratio Schwellwert=1.5} 
 \end{figure}
 
 Wenn man die Resultate der Filterung durch Winkel, Extent und Aspect Ratio kombiniert, erreicht man das Resultat gemäss Abbildung \ref{fig: Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}. Dabei werden Winkel zwischen 80 und 110 Grad, Extent unter 0.4 und Aspect Ratios über 1.5 berücksichtigt.
 
 
+
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/28AngleAspectExtent.jpg}
-	\caption{Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio} 
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/28FilteredAspectAndAngle.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Winkel und Aspect Ratio} 
 	\label{fig: Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio} 
 \end{figure}
 
 Nun werden vier Konturen als potentielle Konuturen von Beinen bei seitlichem Liegen erkannt. Wünschenswert wäre nun, diese Auswahl weiter einzugrenen. Nun ist es wünschenswert, eine Gemeinsamkeit Konturen der Beine der mittleren Kuh zu erkennen. Um die beiden Figuren zu vergleichen, wurde die Funktion \texttt{matchShapes()} eingesetzt. Dabei wurde jede Kontur mit jeder anderen Kontur verglichen und zwei sehr ähnliche Figuren wurden ausgewählt. Leider hat der Algorithmus nicht das gewünschte Resultat bewirkt (Abbildung \ref{fig: Ergebnis der Shape Matching}). 
+
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/29ShapeMatching.jpg}
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/29FilteredByExtentAndAspect.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Extent und Aspect Ratio} 
+	\label{fig: Ergebnis der Filterung der Konturen nach Extent und Aspect Ratio} 
+\end{figure}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg}
+	\caption{Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio} 
+	\label{fig: Ergebnis der Filterung der Konturen nach Extent und Aspect Ratio} 
+\end{figure}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/31FilteredBySimilarity.jpg}
 	\caption{Ergebnis der Shape Matching} 
 	\label{fig: Ergebnis der Shape Matching} 
 \end{figure}
@@ -373,7 +398,7 @@ Nun werden vier Konturen als potentielle Konuturen von Beinen bei seitlichem Lie
 Um sicherzustellen, dass dieses Resultat nicht auf die Winkel der Konturen zurückzuführen sind (die Winkel wurden ja bereits bereinigt), verschiebt der Autor sämtliche Winkel auf 60 Grad und vergleicht die Konturen wieder mit \texttt{matchShapes()} und Schwellwert 2. Das Ergebnis ist dasselbe, die Klassifikation kann zu diesem Zeitpunkt nicht mehr verbessert werden. 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.43]{Grafiken/entwicklung/30ShapeMatching.jpg}
+	\includegraphics[scale=0.43]{Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg}
 	\caption{Ergebnis der Shape Matching und Korrektur der Winkel} 
 	\label{fig: Ergebnis der Shape Matching und Korrektur der Winkel} 
 \end{figure}
