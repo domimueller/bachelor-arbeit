@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Mueller-Dominique_BT.aux
 The style file: agsm.bst
 Database file #1: library.bib
-You've used 18 entries,
+You've used 19 entries,
             2909 wiz_defined-function locations,
-            752 strings with 7517 characters,
-and the built_in function-call counts, 80142 in all, are:
-= -- 13192
-> -- 968
+            756 strings with 7585 characters,
+and the built_in function-call counts, 82844 in all, are:
+= -- 13631
+> -- 992
 < -- 0
-+ -- 6349
-- -- 294
-* -- 6916
-:= -- 16065
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 251
++ -- 6549
+- -- 301
+* -- 7131
+:= -- 16628
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 265
 chr.to.int$ -- 17
-cite$ -- 18
-duplicate$ -- 242
-empty$ -- 517
-format.name$ -- 345
-if$ -- 14350
-int.to.chr$ -- 6
+cite$ -- 19
+duplicate$ -- 253
+empty$ -- 543
+format.name$ -- 354
+if$ -- 14832
+int.to.chr$ -- 7
 int.to.str$ -- 0
 missing$ -- 12
-newline$ -- 63
-num.names$ -- 187
-pop$ -- 109
+newline$ -- 66
+num.names$ -- 197
+pop$ -- 117
 preamble$ -- 1
-purify$ -- 270
+purify$ -- 285
 quote$ -- 0
-skip$ -- 208
+skip$ -- 221
 stack$ -- 0
-substring$ -- 18757
-swap$ -- 29
-text.length$ -- 252
+substring$ -- 19364
+swap$ -- 31
+text.length$ -- 266
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
+type$ -- 70
 warning$ -- 0
-while$ -- 387
+while$ -- 408
 width$ -- 0
-write$ -- 235
+write$ -- 246
