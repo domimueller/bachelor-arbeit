@@ -9,6 +9,12 @@ Agrarbericht.ch  \harvardyearleft n.d.\harvardyearright ,
 {Fern{\'{a}}ndez Vill{\'{a}}n}, A.  \harvardyearleft 2019\harvardyearright ,
   {\em {Mastering OpenCV 4 with Python}}, Packt Publishing, Birmingham.
 
+\harvarditem[Firouzi et~al.]{Firouzi, Chakrabarty, Nassif \harvardand\
+  Device}{2020}{Firouzi2020}
+Firouzi, F., Chakrabarty, K., Nassif, S. \harvardand\ Device, F.
+  \harvardyearleft 2020\harvardyearright , {\em {Intelligent Internet of
+  Things}}, Springer Nature Switzerland AG.
+
 \harvarditem{Hirsbrunner}{2020}{Hirsbrunner2020}
 Hirsbrunner, G.  \harvardyearleft 2020\harvardyearright , `{Interview
   2.4.2020}'.
@@ -21,6 +27,10 @@ Hofer, T.  \harvardyearleft 2010\harvardyearright , `{Strukturwandel in der
 Howse, J., Joshi, P. \harvardand\ Beyeler, M.  \harvardyearleft
   2016\harvardyearright , {\em {OpenCV: Computer Vision Projects with Python}},
   Packt Publishing, Birmingham.
+
+\harvarditem{Kasprowicz \harvardand\ Rieger}{2019}{Kasprowicz2019}
+Kasprowicz, D. \harvardand\ Rieger, S.  \harvardyearleft 2019\harvardyearright
+  , {\em {Handbuch Virtualit{\"{a}}t}}, Springer Fachmedien Wiesbaden GmbH.
 
 \harvarditem{Kohler}{2020}{Kohler2020}
 Kohler, S.  \harvardyearleft 2020\harvardyearright , `{Interview 19.3.2020}'.

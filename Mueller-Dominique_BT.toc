@@ -41,25 +41,25 @@
 \contentsline {subsubsection}{\numberline {4.4.3.6}Allgemeingültigkeit des entwickelten Verfahrens}{64}{subsubsection.4.4.3.6}%
 \contentsline {chapter}{\numberline {5}Resultate}{66}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Ausblick}{70}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Selbstreflexion}{73}{chapter.7}%
-\contentsline {chapter}{\nonumberline Selbstständigkeitserklärung}{74}{chapter*.6}%
-\contentsline {chapter}{\nonumberline Anhang}{81}{chapter*.14}%
-\contentsline {section}{\numberline {1}Glossar}{81}{section.7.1}%
-\contentsline {section}{\numberline {2}Dokumentation zum entwickelten System}{86}{section.7.2}%
-\contentsline {subsection}{\numberline {2.1}Computer für Entwicklung}{86}{subsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Basisinformationen}{86}{subsubsection.7.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Eingesetzte Software}{86}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {2.3}Installation von OpenCV und vorausgesetzten Softwaremodulen}{86}{subsection.7.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Xcode installieren und Lizenzvereinbarung akzeptieren}{86}{subsubsection.7.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Apple Command Line Tools installieren}{87}{subsubsection.7.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Homebrew installieren und Bash Profil anpassen}{87}{subsubsection.7.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Pakete installieren}{87}{subsubsection.7.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Konfiguration und Ordnerstruktur vorbereiten}{87}{subsubsection.7.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Python Pakete installieren und virtuelle Umgebung einrichten}{88}{subsubsection.7.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.7}GitHub Repositories klonen}{88}{subsubsection.7.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Build erstellen}{89}{subsubsection.7.2.3.8}%
-\contentsline {subsubsection}{\numberline {2.3.9}OpenCV 4 kompilieren}{89}{subsubsection.7.2.3.9}%
-\contentsline {subsubsection}{\numberline {2.3.10}Spyder für die Benützung mit der virtuellen Umgebung einrichten}{89}{subsubsection.7.2.3.10}%
-\contentsline {subsection}{\numberline {2.4}Nützliche Links}{90}{subsection.7.2.4}%
-\contentsline {section}{\numberline {3}Mindmap als Entwurf für Modellierung der Domäne}{91}{section.7.3}%
+\contentsline {chapter}{\numberline {7}Selbstreflexion}{72}{chapter.7}%
+\contentsline {chapter}{\nonumberline Selbstständigkeitserklärung}{73}{chapter*.6}%
+\contentsline {chapter}{\nonumberline Anhang}{80}{chapter*.14}%
+\contentsline {section}{\numberline {1}Glossar}{80}{section.7.1}%
+\contentsline {section}{\numberline {2}Dokumentation zum entwickelten System}{85}{section.7.2}%
+\contentsline {subsection}{\numberline {2.1}Computer für Entwicklung}{85}{subsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Basisinformationen}{85}{subsubsection.7.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Eingesetzte Software}{85}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {2.3}Installation von OpenCV und vorausgesetzten Softwaremodulen}{85}{subsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Xcode installieren und Lizenzvereinbarung akzeptieren}{85}{subsubsection.7.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Apple Command Line Tools installieren}{86}{subsubsection.7.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Homebrew installieren und Bash Profil anpassen}{86}{subsubsection.7.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Pakete installieren}{86}{subsubsection.7.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Konfiguration und Ordnerstruktur vorbereiten}{86}{subsubsection.7.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Python Pakete installieren und virtuelle Umgebung einrichten}{87}{subsubsection.7.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}GitHub Repositories klonen}{87}{subsubsection.7.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Build erstellen}{88}{subsubsection.7.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}OpenCV 4 kompilieren}{88}{subsubsection.7.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Spyder für die Benützung mit der virtuellen Umgebung einrichten}{88}{subsubsection.7.2.3.10}%
+\contentsline {subsection}{\numberline {2.4}Nützliche Links}{89}{subsection.7.2.4}%
+\contentsline {section}{\numberline {3}Mindmap als Entwurf für Modellierung der Domäne}{90}{section.7.3}%
 \contentsfinish 
