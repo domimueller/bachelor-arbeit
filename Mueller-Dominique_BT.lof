@@ -34,24 +34,27 @@
 \contentsline {figure}{\numberline {28}{\ignorespaces Unwichtige Bereiche als konvexe Hülle}}{45}{figure.4.28}%
 \contentsline {figure}{\numberline {29}{\ignorespaces Unwichtige Bereiche als Kreise }}{46}{figure.4.29}%
 \contentsline {figure}{\numberline {30}{\ignorespaces Unwichtige Bereiche als Rechtecke}}{47}{figure.4.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Detektierung von wichtigen Bereichen mittels adaptivem Schwellwertverfahren}}{48}{figure.4.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Versuch, aus nicht geglättetem Bild wichtige Bereiche zu detektieren}}{49}{figure.4.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Ergebnisse nach angepasster Konfiguration des Schwellwertverfahrens}}{50}{figure.4.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Ergebnisse nach angepasster Konfiguration des Contour Finders}}{51}{figure.4.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Konturen mit Farbe gefüllt}}{52}{figure.4.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Ausgangslage vor der Analyse und Filterung der Konturen}}{53}{figure.4.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Veranschaulichung zur Analyse der Winkel}}{54}{figure.4.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Ergebnisse nach Filterung der Konturen nach Winkel}}{55}{figure.4.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Ergebnis der Filterung der Konturen nach Extent }}{57}{figure.4.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel und Extent }}{58}{figure.4.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Ergebnis der Filterung von Konturen nach Aspect Ratio }}{59}{figure.4.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}}{60}{figure.4.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Ergebnis der Shape Matching}}{61}{figure.4.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Ergebnis der Shape Matching und Korrektur der Winkel}}{62}{figure.4.44}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Detektierung von wichtigen Bereichen mittels adaptivem Schwellwertverfahren}}{49}{figure.4.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Versuch, aus nicht geglättetem Bild wichtige Bereiche zu detektieren}}{50}{figure.4.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Ergebnisse nach angepasster Konfiguration des Schwellwertverfahrens}}{51}{figure.4.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Ergebnisse nach angepasster Konfiguration des Contour Finders}}{52}{figure.4.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Konturen mit Farbe gefüllt}}{53}{figure.4.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Ausgangslage vor der Analyse und Filterung der Konturen}}{54}{figure.4.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Veranschaulichung zur Analyse der Winkel}}{55}{figure.4.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Ergebnisse nach Filterung der Konturen nach Winkel}}{56}{figure.4.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Ergebnis der Filterung der Konturen nach Extent }}{58}{figure.4.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel und Extent }}{59}{figure.4.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Ergebnis der Filterung von Konturen nach Aspect Ratio }}{60}{figure.4.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Ergebnis der Filterung der Konturen nach Winkel, Extent und Aspect Ratio}}{61}{figure.4.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Ergebnis der Shape Matching}}{63}{figure.4.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Ergebnis der Shape Matching und Korrektur der Winkel}}{64}{figure.4.44}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {45}{\ignorespaces Weiteres Ergebnis von seitlich liegender Kuh}}{65}{figure.5.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Ergebnis von stehender Kuh}}{65}{figure.5.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Weiteres Ergebnis von stehender Kuh}}{66}{figure.5.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {45}{\ignorespaces Mindmap als Entwurf für die Modellierung der Domäne. Farbcodierung gemäss Tabelle }}{85}{figure.7.45}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Mindmap als Entwurf für die Modellierung der Domäne. Farbcodierung gemäss Tabelle }}{86}{figure.7.48}%
 \contentsfinish 
