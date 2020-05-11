@@ -7,11 +7,11 @@
 
 \section{Codierung von Domänenwissen}
 
-Tabelle xx (<<VERWEIS AUF TABELLE EINFÜGEN>>) codiert Domänenwissen von Tierärzten, welches für die Geburtsprognose von Bedeutung ist. Expertenwissen ist so codiert, dass jedes Geburtsmerkmal mit einer Gewichtung versehen ist. Somit hat das Merkmal an Stelle $i$ die Gewichtung $\lambda_{i}$.
+Die Tabellen \ref{tab: Bewertung der Anwesenheit und Abwesenheit von Merkmalen} bis \ref{tab: Zuordnung und Bewertung der Häufigkeiten von Merkmalen (Gaby Hirsbrunner)} und  codieren Domänenwissen von Tierärzten, welches für die Geburtsprognose von Bedeutung ist. Expertenwissen ist so codiert, dass jedes Geburtsmerkmal mit einer Gewichtung versehen ist. Somit hat das Merkmal an Stelle $i$ die Gewichtung $\lambda_{i}$ und $x_{i}$ markiert ihre Anwesenheit ($x_i = 1$) oder Abwesenheit ($x_i = 0$).
 
 
 
-Wie in Formel \ref{Linerarkombination zur Geburtsprognose} formalisiert, werden bei Erkennung eines oder mehrerer Merkmale in einem Bild, die Gewichtungen dieser Merkmale addiert. Merkmale, welche als Geburtsanzeichen dienen, haben eine positive Gewichtung und erhöhen dadurch das Endergebnis. Merkmale, welche darauf hinweisen, dass zurzeit keine Entbindung stattfindet, haben eine negative Gewichtung und senken das Endergebnis.
+Wie in Formel \ref{Linerarkombination zur Geburtsprognose} abgebildet, werden bei Erkennung eines oder mehrerer Merkmale in einem Bild, die Gewichtungen dieser Merkmale addiert. Merkmale, welche als Geburtsanzeichen dienen, haben eine positive Gewichtung und erhöhen dadurch das Endergebnis. Merkmale, welche darauf hinweisen, dass zurzeit keine Entbindung stattfindet, haben eine negative Gewichtung und senken das Endergebnis.
 
 
 Das Resultat dieser Berechnung bezeichnet der Autor als \flqq qualitative Situationsbewertung\frqq. Diese wird mit einem Schwellwert verglichen, um zu entscheiden, ob eine Benachrichtigung verschickt wird.
@@ -25,15 +25,15 @@ v = h(x) = \sum_{i=1}^n \lambda_{i}*x_{i}
 \end{equation}
 
  
-Wobei $\lambda_{i}$ sich aus der fachlichen Gewichtung $\kappa_{i}$ und der technischen Qualitätsbeurteilung $\beta_{i}$ zusammensetzt. Die Skala zur Bewertung reicht von -10 bis 10, daher ergibt sich $ \lambda = \kappa = \beta = \{ \:  m \: | \:  m \:  \varepsilon \:  \mathbb{Z}, -10 \:  \leq \: m \: \leq \:  10\} $.
+Wobei $\lambda_{i}$ sich aus der fachlichen Gewichtung $\kappa_{i}$ und der technischen Qualitätsbeurteilung $\beta_{i}$ zusammensetzt. Die Skala zur Bewertung reicht von -10 bis 10, daher ergibt sich $ \lambda, \kappa, \beta   \: \varepsilon \: m =\:   \{ \:  m \: | \:  m \:  \varepsilon \:  \mathbb{Z}, -10 \:  \leq \: m \: \leq \:  10\} $.
 
 Die fachliche Gewichtung eines Merkmals entspricht der Bewertung  der Stärke des Hinweises in Bezug auf eine bevorstehende Geburt. Dementsprechend codiert $\kappa$ Domänenwissen von Tierärzten zur merkmalsbezogene Einschätzung und Prognose des Geburtsverlaufs.
 
-Die technische Qualitätsbeurteilung basiert auf der Güte der technischen Mittel zwecks Analyse der An- oder Abwesenheit eines Merkmals in einem Bild. Dementsprechend wird $\beta$ benötigt, weil nicht sämtliche Merkmale mit derselben Qualität auf deren An- oder Abwesenheit überprüft werden können.
+Die technische Qualitätsbeurteilung basiert auf der Güte der technischen Mittel zwecks Analyse der An- oder Abwesenheit eines Merkmals $x_{i}$ in einem Bild. Dementsprechend wird $\beta$ benötigt, weil nicht sämtliche Merkmale mit derselben Qualität auf deren An- oder Abwesenheit überprüft werden können.
 
 Zwischen den beiden Gewichtungen $\kappa$ und $\beta$ existiert eine schwache Beziehung. Dies wird dadurch begründet, dass technische Zuverlässigkeit die Anwesenheit eines Merkmals nicht überbewerten soll. Beispielsweise soll eine besonders hohe technische Qualitätsbeurteilung und eine tiefe fachliche Gewichtung nicht in einer hohen Gewichtung resultieren. Um diese zwei Gewichtungen schwach miteinander in Beziehung zu setzen, werden diese addiert und nicht multipliziert. Es gilt also: $\lambda_{i} = \kappa_{i} + \beta_{i}$
 
-Zudem codiert $x_{i}$ die Anwesenheit ($x_{i}=1$) oder die Abwesenheit ($x_{i}=0$) eines spezifischen Merkmals auf einem Bild. Es gilt dementsprechend  $ x_{i} \:  \varepsilon \: \{0,1\}. $ 
+Die Variable  $x_{i}$ codiert die Anwesenheit ($x_{i}=1$) oder die Abwesenheit ($x_{i}=0$) eines spezifischen Merkmals auf einem Bild. Es gilt dementsprechend  $ x_{i} \:  \varepsilon \: \{0,1\}. $ 
 
 
 Setzen wir diese Erkenntnisse zusammen, so ergibt sich
@@ -42,9 +42,9 @@ Setzen wir diese Erkenntnisse zusammen, so ergibt sich
 v = h(x) = \sum_{i=1}^n (\kappa_{i}+\beta_{i}) *x_{i}
 \end{equation}
 
-wobei:  $ x \:  \varepsilon \: \{0,1\} $ und $\kappa = \beta = \{ \:  m \: | \:  m \:  \varepsilon \:  \mathbb{Z}, -10 \:  \leq \: m \: \leq \:  10\} $.
+wobei:  $ x \:  \varepsilon \: \{0,1\} $ und $ \lambda, \kappa, \beta   \: \varepsilon \: m =\: \{ \:  m \: | \:  m \:  \varepsilon \:  \mathbb{Z}, -10 \:  \leq \: m \: \leq \:  10\} $.
 
-Das Ergebnis dieser Rechenoperation ergibt wie bereits erwähnt die qualitative Situationsbewertung $v$, welche mit einem Schwellwert verglichen wird. Dies wird formal wie folgt ausgedrückt:
+Das Ergebnis dieser Rechenoperation ergibt wie bereits erwähnt die qualitative Situationsbewertung $v$, welche anhand der Indikatorfunktion $g$ mittels eines Schwellwertes ausgewertet wird» . Dies wird formal wie folgt ausgedrückt:
 
 \begin{equation}\label{Vollständige Linerarkombination zur Geburtsprognose: Schwellwertanalyse}
 y = g(v) =\begin{cases}
