@@ -3,44 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Mueller-Dominique_BT.aux
 The style file: agsm.bst
 Database file #1: library.bib
-You've used 21 entries,
+Warning--can't use both author and editor fields in Hofer
+Warning--empty publisher in Hofer
+You've used 22 entries,
             2909 wiz_defined-function locations,
-            768 strings with 7929 characters,
-and the built_in function-call counts, 92990 in all, are:
-= -- 15304
-> -- 1130
+            777 strings with 8018 characters,
+and the built_in function-call counts, 92242 in all, are:
+= -- 15136
+> -- 1108
 < -- 0
-+ -- 7367
-- -- 343
-* -- 8014
-:= -- 18644
-add.period$ -- 21
-call.type$ -- 21
-change.case$ -- 291
-chr.to.int$ -- 19
-cite$ -- 21
-duplicate$ -- 285
-empty$ -- 601
-format.name$ -- 405
-if$ -- 16658
++ -- 7254
+- -- 336
+* -- 7909
+:= -- 18581
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 303
+chr.to.int$ -- 20
+cite$ -- 24
+duplicate$ -- 306
+empty$ -- 633
+format.name$ -- 399
+if$ -- 16506
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 72
-num.names$ -- 218
-pop$ -- 134
+missing$ -- 20
+newline$ -- 76
+num.names$ -- 227
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 315
+purify$ -- 330
 quote$ -- 0
-skip$ -- 240
+skip$ -- 245
 stack$ -- 0
-substring$ -- 21740
-swap$ -- 33
-text.length$ -- 294
+substring$ -- 21460
+swap$ -- 35
+text.length$ -- 308
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 74
-warning$ -- 0
-while$ -- 450
+warning$ -- 2
+while$ -- 471
 width$ -- 0
-write$ -- 272
+write$ -- 285
+(There were 2 warnings)

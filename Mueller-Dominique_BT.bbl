@@ -5,6 +5,10 @@ Agrarbericht.ch  \harvardyearleft n.d.\harvardyearright ,
   `www.agrarbericht.ch'.
 \newline\harvardurl{https://agrarbericht.ch/de/betrieb/strukturen/betriebe?highlight=gr{\"{o}}ssenklasse}
 
+\harvarditem{Evans}{2015}{Evans2015}
+Evans, E.  \harvardyearleft 2015\harvardyearright , {\em {Domain-Driven
+  Design}}, dogear Publishing, Indianapolis.
+
 \harvarditem{{Fern{\'{a}}ndez Vill{\'{a}}n}}{2019}{FernandezVillan2019}
 {Fern{\'{a}}ndez Vill{\'{a}}n}, A.  \harvardyearleft 2019\harvardyearright ,
   {\em {Mastering OpenCV 4 with Python}}, Packt Publishing, Birmingham.
@@ -20,13 +24,9 @@ Hirsbrunner, G.  \harvardyearleft 2020\harvardyearright , `{Interview
   2.4.2020}'.
 
 \harvarditem{Hofer}{2010}{Hofer}
-Hofer, T.  \harvardyearleft 2010\harvardyearright , `{Strukturwandel in der
-  Z{\"{u}}rcher Landwirtschaft}'.
-
-\harvarditem[Howse et~al.]{Howse, Joshi \harvardand\ Beyeler}{2016}{Howse2016}
-Howse, J., Joshi, P. \harvardand\ Beyeler, M.  \harvardyearleft
-  2016\harvardyearright , {\em {OpenCV: Computer Vision Projects with Python}},
-  Packt Publishing, Birmingham.
+Hofer, T.  \harvardyearleft 2010\harvardyearright , {\em {Strukturwandel in der
+  Z{\"{u}}rcher Landwirtschaft}}, Z{\"{u}}rich.
+\newline\harvardurl{www.statistik.zh.ch}
 
 \harvarditem{Kasprowicz \harvardand\ Rieger}{2019}{Kasprowicz2019}
 Kasprowicz, D. \harvardand\ Rieger, S.  \harvardyearleft 2019\harvardyearright
@@ -109,5 +109,9 @@ Traulsen, K. \harvardand\ Tischer, M.  \harvardyearleft 2013\harvardyearright ,
   {Geburts{\"{u}}berwachung und Geburtshilfe beim Rind}, Technical report,
   Boehringer Ingelheim Vetmedica GmbH, Ingelheim am Rhein.
 \newline\harvardurl{https://www.vetmedica.de/2013-01-metacam-geburtshilfebroschuere-561.pdfx}
+
+\harvarditem{Vernon}{2016}{Vernon2016}
+Vernon, V.  \harvardyearleft 2016\harvardyearright , {\em {Domain-Driven Design
+  Distilled}}, Addison-Wesley / Pearson Education, Boston.
 
 \end{thebibliography}

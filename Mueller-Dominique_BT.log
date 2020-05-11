@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  10 MAY 2020 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  11 MAY 2020 05:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -904,12 +904,6 @@ Package chngcntr Info: \counterwithout already defined.
 LaTeX Warning: Label `fig: Schwanzhebung' multiply defined.
 
 
-LaTeX Warning: Label `fig: √ñffnungsphase' multiply defined.
-
-
-LaTeX Warning: Label `fig: √ñffnungsphase' multiply defined.
-
-
 LaTeX Warning: Label `tab: Glossareintrag zu Vorkalbeperiode' multiply defined.
 
 
@@ -1177,7 +1171,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 31.
 Package tocbasic Info: Using my definition of `\numberline' on input line 32.
 Package tocbasic Info: Using my definition of `\numberline' on input line 33.
 Package tocbasic Info: Using my definition of `\numberline' on input line 34.
-Package tocbasic Info: Using my definition of `\numberline' on input line 35.
+Package tocbasic Info: Using my definition of `\numberline' on input line 41.
 Package tocbasic Info: Using my definition of `\numberline' on input line 42.
 Package tocbasic Info: Using my definition of `\numberline' on input line 43.
 Package tocbasic Info: Using my definition of `\numberline' on input line 44.
@@ -1185,11 +1179,10 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 45.
 Package tocbasic Info: Using my definition of `\numberline' on input line 46.
 Package tocbasic Info: Using my definition of `\numberline' on input line 47.
 Package tocbasic Info: Using my definition of `\numberline' on input line 48.
-Package tocbasic Info: Using my definition of `\numberline' on input line 49.
+Package tocbasic Info: Using my definition of `\numberline' on input line 50.
 Package tocbasic Info: Using my definition of `\numberline' on input line 51.
-Package tocbasic Info: Using my definition of `\numberline' on input line 52.
+Package tocbasic Info: Using my definition of `\numberline' on input line 62.
 Package tocbasic Info: Using my definition of `\numberline' on input line 63.
-Package tocbasic Info: Using my definition of `\numberline' on input line 64.
 )
 \tf@toc=\write4
 \openout4 = `Mueller-Dominique_BT.toc'.
@@ -1209,7 +1202,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<Grafiken/Betriebsstatistik.PNG, id=136, 609.27625pt x 266.9975pt>
+<Grafiken/Betriebsstatistik.PNG, id=134, 609.27625pt x 266.9975pt>
 File: Grafiken/Betriebsstatistik.PNG Graphic file (type png)
 <use Grafiken/Betriebsstatistik.PNG>
 Package pdftex.def Info: Grafiken/Betriebsstatistik.PNG  used on input line 18.
@@ -1228,6 +1221,41 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [2 <./Grafiken/Betriebsstatistik.png>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 37
+.
+
+(c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+  [][][]\T1/pnc/m/n/9 (+20) Weitere In-for-ma-tio-nen: [][]$\T1/pcr/m/n/9 https
+ : / / swissgenetics . com / genetik /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+ \T1/pcr/m/n/9 rassenspezifische-[]informationen / holstein/$[][] \T1/pnc/m/n/9
+ (+20) und [][]$\T1/pcr/m/n/9 https : / / www . swissherdbook .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+  [][][]\T1/pnc/m/n/9 (+20) Weitere In-for-ma-tio-nen: [][]$\T1/pcr/m/n/9 https
+ : / / swissgenetics . com / genetik /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+ \T1/pcr/m/n/9 rassenspezifische-[]informationen / swiss-[]fleckvieh/$[][] \T1/
+pnc/m/n/9 (+20) und [][]$\T1/pcr/m/n/9 https : / / www .
+ []
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1265,91 +1293,100 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 chapter 2.
 [7
 
-]) (./Chapter3.tex
+]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[8]
+[8]) (./Chapter3.tex
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[9]
 chapter 3.
 ) (./Chapter3-1.tex
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <12> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 5.
-<Grafiken/schwanzhebung.jpg, id=226, 354.123pt x 471.9231pt>
+<Grafiken/schwanzhebung.jpg, id=265, 354.123pt x 471.9231pt>
 File: Grafiken/schwanzhebung.jpg Graphic file (type jpg)
 <use Grafiken/schwanzhebung.jpg>
 Package pdftex.def Info: Grafiken/schwanzhebung.jpg  used on input line 15.
 (pdftex.def)             Requested size: 159.35387pt x 212.36342pt.
- [9
+ [10
 
 ]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[10 <./Grafiken/schwanzhebung.jpg>]
-<Grafiken/observationTimes.png, id=250, 792.9625pt x 473.77pt>
+[11 <./Grafiken/schwanzhebung.jpg>]
+<Grafiken/observationTimes.png, id=289, 792.9625pt x 473.77pt>
 File: Grafiken/observationTimes.png Graphic file (type png)
 <use Grafiken/observationTimes.png>
-Package pdftex.def Info: Grafiken/observationTimes.png  used on input line 31.
+Package pdftex.def Info: Grafiken/observationTimes.png  used on input line 32.
 (pdftex.def)             Requested size: 356.82982pt x 213.19452pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[11 <./Grafiken/observationTimes.png>]
-<Grafiken/vorderendlage.png, id=268, 696.6025pt x 500.87125pt>
+[12 <./Grafiken/observationTimes.png>]
+<Grafiken/vorderendlage.png, id=309, 696.6025pt x 500.87125pt>
 File: Grafiken/vorderendlage.png Graphic file (type png)
 <use Grafiken/vorderendlage.png>
-Package pdftex.def Info: Grafiken/vorderendlage.png  used on input line 45.
+Package pdftex.def Info: Grafiken/vorderendlage.png  used on input line 46.
 (pdftex.def)             Requested size: 313.46823pt x 225.38997pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[12 <./Grafiken/vorderendlage.png>]
-<Grafiken/oeffnungsphase.png, id=292, 730.73pt x 563.10374pt>
+[13]
+<Grafiken/oeffnungsphase.png, id=327, 730.73pt x 563.10374pt>
 File: Grafiken/oeffnungsphase.png Graphic file (type png)
 <use Grafiken/oeffnungsphase.png>
-Package pdftex.def Info: Grafiken/oeffnungsphase.png  used on input line 58.
+Package pdftex.def Info: Grafiken/oeffnungsphase.png  used on input line 59.
 (pdftex.def)             Requested size: 328.82545pt x 253.39435pt.
-<Grafiken/aufweitungsphase.png, id=299, 725.71124pt x 550.055pt>
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[14 <./Grafiken/vorderendlage.png>]
+<Grafiken/aufweitungsphase.png, id=340, 725.71124pt x 550.055pt>
 File: Grafiken/aufweitungsphase.png Graphic file (type png)
 <use Grafiken/aufweitungsphase.png>
-Package pdftex.def Info: Grafiken/aufweitungsphase.png  used on input line 66.
+Package pdftex.def Info: Grafiken/aufweitungsphase.png  used on input line 69.
 (pdftex.def)             Requested size: 326.56705pt x 247.52246pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[13 <./Grafiken/oeffnungsphase.png>]
-<Grafiken/austreibungsphase.png, id=313, 731.73375pt x 560.0925pt>
+[15 <./Grafiken/oeffnungsphase.png>]
+<Grafiken/austreibungsphase.png, id=353, 731.73375pt x 560.0925pt>
 File: Grafiken/austreibungsphase.png Graphic file (type png)
 <use Grafiken/austreibungsphase.png>
-Package pdftex.def Info: Grafiken/austreibungsphase.png  used on input line 76.
+Package pdftex.def Info: Grafiken/austreibungsphase.png  used on input line 81.
 
 (pdftex.def)             Requested size: 329.27715pt x 252.03929pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[14 <./Grafiken/aufweitungsphase.png>]) (./Chapter3-2.tex
+[16 <./Grafiken/aufweitungsphase.png>]) (./Chapter3-2.tex
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[15 <./Grafiken/austreibungsphase.png>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[16]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[17]) (./Chapter3-2-1.tex
+[17 <./Grafiken/austreibungsphase.png>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [18]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[19]) (./Chapter3-2-1.tex
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[20]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1392,7 +1429,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[19]) (./Chapter3-2-2.tex
+[21]) (./Chapter3-2-2.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1439,26 +1476,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[20]
+[22]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[21]) (./Chapter3-4.tex
+[23]) (./Chapter3-4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<Grafiken/austrittklauen.jpg, id=396, 2569.6pt x 1927.2pt>
+<Grafiken/austrittklauen.jpg, id=435, 2569.6pt x 1927.2pt>
 File: Grafiken/austrittklauen.jpg Graphic file (type jpg)
 <use Grafiken/austrittklauen.jpg>
 Package pdftex.def Info: Grafiken/austrittklauen.jpg  used on input line 15.
 (pdftex.def)             Requested size: 192.71169pt x 144.53377pt.
-<Grafiken/seitlichesligen.jpg, id=401, 2569.6pt x 1927.2pt>
+<Grafiken/seitlichesligen.jpg, id=440, 2569.6pt x 1927.2pt>
 File: Grafiken/seitlichesligen.jpg Graphic file (type jpg)
 <use Grafiken/seitlichesligen.jpg>
 Package pdftex.def Info: Grafiken/seitlichesligen.jpg  used on input line 23.
 (pdftex.def)             Requested size: 192.71169pt x 144.53377pt.
-<Grafiken/schwanhebungkamerabild.jpg, id=402, 2569.6pt x 1927.2pt>
+<Grafiken/schwanhebungkamerabild.jpg, id=441, 2569.6pt x 1927.2pt>
 File: Grafiken/schwanhebungkamerabild.jpg Graphic file (type jpg)
 <use Grafiken/schwanhebungkamerabild.jpg>
 Package pdftex.def Info: Grafiken/schwanhebungkamerabild.jpg  used on input lin
@@ -1467,7 +1504,7 @@ e 31.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Grafiken/schleimvagina.jpg, id=403, 2569.6pt x 1927.2pt>
+<Grafiken/schleimvagina.jpg, id=442, 2569.6pt x 1927.2pt>
 File: Grafiken/schleimvagina.jpg Graphic file (type jpg)
 <use Grafiken/schleimvagina.jpg>
 Package pdftex.def Info: Grafiken/schleimvagina.jpg  used on input line 38.
@@ -1475,7 +1512,7 @@ Package pdftex.def Info: Grafiken/schleimvagina.jpg  used on input line 38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Grafiken/schleim.jpg, id=404, 2569.6pt x 1927.2pt>
+<Grafiken/schleim.jpg, id=443, 2569.6pt x 1927.2pt>
 File: Grafiken/schleim.jpg Graphic file (type jpg)
 <use Grafiken/schleim.jpg>
 Package pdftex.def Info: Grafiken/schleim.jpg  used on input line 46.
@@ -1487,7 +1524,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[22
+[24
 
 
 
@@ -1500,7 +1537,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[23 <./Grafiken/schwanhebungkamerabild.jpg> <./Grafiken/schleimvagina.jpg> <./G
+[25 <./Grafiken/schwanhebungkamerabild.jpg> <./Grafiken/schleimvagina.jpg> <./G
 rafiken/schleim.jpg>]
 Overfull \hbox (4.08488pt too wide) in paragraph at lines 14--33
  [][] 
@@ -1510,7 +1547,7 @@ Overfull \hbox (4.08488pt too wide) in paragraph at lines 14--33
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[24
+[26
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1545,13 +1582,13 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Grafiken/modelle/domain-birth.jpg, id=426, 1616.0375pt x 1037.8775pt>
+<Grafiken/modelle/domain-birth.jpg, id=464, 1616.0375pt x 1037.8775pt>
 File: Grafiken/modelle/domain-birth.jpg Graphic file (type jpg)
 <use Grafiken/modelle/domain-birth.jpg>
 Package pdftex.def Info: Grafiken/modelle/domain-birth.jpg  used on input line 
 43.
 (pdftex.def)             Requested size: 614.10065pt x 394.39755pt.
-<Grafiken/modelle/vo-general.jpg, id=427, 1393.205pt x 863.225pt>
+<Grafiken/modelle/vo-general.jpg, id=465, 1393.205pt x 863.225pt>
 File: Grafiken/modelle/vo-general.jpg Graphic file (type jpg)
 <use Grafiken/modelle/vo-general.jpg>
 Package pdftex.def Info: Grafiken/modelle/vo-general.jpg  used on input line 52
@@ -1561,11 +1598,11 @@ Package pdftex.def Info: Grafiken/modelle/vo-general.jpg  used on input line 52
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[25
+[27
 
 
  <./Grafiken/modelle/domain-birth.jpg>]
-<Grafiken/modelle/vo-messaging.jpg, id=433, 1517.67pt x 997.7275pt>
+<Grafiken/modelle/vo-messaging.jpg, id=472, 1517.67pt x 997.7275pt>
 File: Grafiken/modelle/vo-messaging.jpg Graphic file (type jpg)
 <use Grafiken/modelle/vo-messaging.jpg>
 Package pdftex.def Info: Grafiken/modelle/vo-messaging.jpg  used on input line 
@@ -1575,13 +1612,13 @@ Package pdftex.def Info: Grafiken/modelle/vo-messaging.jpg  used on input line
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[26 <./Grafiken/modelle/vo-general.jpg>]
+[28 <./Grafiken/modelle/vo-general.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[27 <./Grafiken/modelle/vo-messaging.jpg>]) (./Chapter4.tex
+[29 <./Grafiken/modelle/vo-messaging.jpg>]) (./Chapter4.tex
 chapter 4.
-[28
+[30
 
 
 
@@ -1589,7 +1626,7 @@ chapter 4.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[29]
+[31]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1622,7 +1659,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Grafiken/modelle/solution-imageanalysis.jpg, id=464, 1519.6775pt x 845.1575pt>
+<Grafiken/modelle/solution-imageanalysis.jpg, id=502, 1519.6775pt x 845.1575pt>
 
 File: Grafiken/modelle/solution-imageanalysis.jpg Graphic file (type jpg)
 <use Grafiken/modelle/solution-imageanalysis.jpg>
@@ -1633,11 +1670,11 @@ nput line 74.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[30
+[32
 
 
 ]
-<Grafiken/modelle/solution-messaging.jpg, id=470, 1672.2475pt x 863.225pt>
+<Grafiken/modelle/solution-messaging.jpg, id=508, 1672.2475pt x 863.225pt>
 File: Grafiken/modelle/solution-messaging.jpg Graphic file (type jpg)
 <use Grafiken/modelle/solution-messaging.jpg>
 Package pdftex.def Info: Grafiken/modelle/solution-messaging.jpg  used on input
@@ -1652,39 +1689,23 @@ Overfull \hbox (16.26935pt too wide) in paragraph at lines 82--83
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[31 <./Grafiken/modelle/solution-imageanalysis.jpg>]
+[33 <./Grafiken/modelle/solution-imageanalysis.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[32 <./Grafiken/modelle/solution-messaging.jpg>]
+[34 <./Grafiken/modelle/solution-messaging.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[33]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[34
-
-
-]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-5.
- (c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-<Grafiken/entwicklung/1ausgangsbildBericht.jpg, id=491, 1027.84pt x 770.88pt>
+[35]
+<Grafiken/entwicklung/1ausgangsbildBericht.jpg, id=525, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/1ausgangsbildBericht.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/1ausgangsbildBericht.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/1ausgangsbildBericht.jpg  used on
- input line 109.
+ input line 100.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 109--110
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 100--101
  [] 
  []
 
@@ -1692,24 +1713,50 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 109--110
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[35 <./Grafiken/entwicklung/1ausgangsbildBericht.jpg>]
-<Grafiken/entwicklung/2HistrogrammVergleich.jpg, id=504, 289.08pt x 197.23688pt
+[36
+
+
+ <./Grafiken/entwicklung/1ausgangsbildBericht.jpg>]
+<Grafiken/entwicklung/2HistrogrammVergleich.jpg, id=538, 289.08pt x 197.23688pt
 >
 File: Grafiken/entwicklung/2HistrogrammVergleich.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/2HistrogrammVergleich.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/2HistrogrammVergleich.jpg  used o
-n input line 120.
+n input line 111.
 (pdftex.def)             Requested size: 260.16959pt x 177.51152pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[36 <./Grafiken/entwicklung/2HistrogrammVergleich.jpg>]
-<Grafiken/entwicklung/8thresholdedMask.jpg, id=519, 1027.84pt x 770.88pt>
+[37 <./Grafiken/entwicklung/2HistrogrammVergleich.jpg>]
+<Grafiken/entwicklung/8thresholdedMask.jpg, id=553, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/8thresholdedMask.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/8thresholdedMask.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/8thresholdedMask.jpg  used on inp
-ut line 143.
+ut line 134.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 134--135
+ [] 
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[38]
+Overfull \hbox (36.38382pt too wide) in paragraph at lines 139--140
+[]\T1/pnc/m/n/10.95 (-20) Im Bi-n‰r-bild aus Ab-bil-dung [][]20[][] wer-den an-
+sch-lies-send mit den Funk-tio-nen \T1/pcr/m/n/10.95 findContours()
+ []
+
+<Grafiken/entwicklung/8thresholdedImageAllContours.jpg, id=562, 1027.84pt x 770
+.88pt>
+File: Grafiken/entwicklung/8thresholdedImageAllContours.jpg Graphic file (type 
+jpg)
+<use Grafiken/entwicklung/8thresholdedImageAllContours.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/8thresholdedImageAllContours.jpg 
+ used on input line 143.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
 Overfull \hbox (23.70891pt too wide) in paragraph at lines 143--144
@@ -1720,42 +1767,19 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 143--144
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[37]
-Overfull \hbox (36.38382pt too wide) in paragraph at lines 148--149
-[]\T1/pnc/m/n/10.95 (-20) Im Bi-n‰r-bild aus Ab-bil-dung [][]20[][] wer-den an-
-sch-lies-send mit den Funk-tio-nen \T1/pcr/m/n/10.95 findContours()
- []
-
-<Grafiken/entwicklung/8thresholdedImageAllContours.jpg, id=528, 1027.84pt x 770
-.88pt>
-File: Grafiken/entwicklung/8thresholdedImageAllContours.jpg Graphic file (type 
-jpg)
-<use Grafiken/entwicklung/8thresholdedImageAllContours.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/8thresholdedImageAllContours.jpg 
- used on input line 152.
-(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
-
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 152--153
- [] 
- []
-
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[38 <./Grafiken/entwicklung/8thresholdedMask.jpg>]
+[39 <./Grafiken/entwicklung/8thresholdedMask.jpg>]
 
 LaTeX Warning: Reference `fig:Originalbild mit s√§mtlichen Konturen rot eingef√
-§rbt' on page 39 undefined on input line 157.
+§rbt' on page 40 undefined on input line 148.
 
-<Grafiken/entwicklung/9thresholdedImage.jpg, id=535, 1027.84pt x 770.88pt>
+<Grafiken/entwicklung/9thresholdedImage.jpg, id=570, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/9thresholdedImage.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/9thresholdedImage.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/9thresholdedImage.jpg  used on in
-put line 164.
+put line 155.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 164--165
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 155--156
  [] 
  []
 
@@ -1763,44 +1787,44 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 164--165
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[39 <./Grafiken/entwicklung/8thresholdedImageAllContours.jpg>]
+[40 <./Grafiken/entwicklung/8thresholdedImageAllContours.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[40 <./Grafiken/entwicklung/9thresholdedImage.jpg>]
-<Grafiken/entwicklung/3binBildLampe.jpg, id=551, 1027.84pt x 770.88pt>
+[41 <./Grafiken/entwicklung/9thresholdedImage.jpg>]
+<Grafiken/entwicklung/3binBildLampe.jpg, id=584, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/3binBildLampe.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/3binBildLampe.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/3binBildLampe.jpg  used on input 
-line 177.
+line 168.
 (pdftex.def)             Requested size: 256.95937pt x 192.71953pt.
-<Grafiken/entwicklung/4binBildHolz.jpg, id=553, 1027.84pt x 770.88pt>
+<Grafiken/entwicklung/4binBildHolz.jpg, id=586, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/4binBildHolz.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/4binBildHolz.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/4binBildHolz.jpg  used on input l
-ine 185.
+ine 176.
 (pdftex.def)             Requested size: 256.95937pt x 192.71953pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[41 <./Grafiken/entwicklung/3binBildLampe.jpg>]
-<Grafiken/entwicklung/5binLampeUndHolz.jpg, id=559, 1027.84pt x 770.88pt>
+[42 <./Grafiken/entwicklung/3binBildLampe.jpg>]
+<Grafiken/entwicklung/5binLampeUndHolz.jpg, id=592, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/5binLampeUndHolz.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/5binLampeUndHolz.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/5binLampeUndHolz.jpg  used on inp
-ut line 193.
+ut line 184.
 (pdftex.def)             Requested size: 256.95937pt x 192.71953pt.
-<Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg, id=562, 1027.84pt x
+<Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg, id=595, 1027.84pt x
  770.88pt>
 File: Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg Graphic file (t
 ype jpg)
 <use Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.
-jpg  used on input line 201.
+jpg  used on input line 192.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 201--202
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 192--193
  [] 
  []
 
@@ -1808,28 +1832,44 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 201--202
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[42 <./Grafiken/entwicklung/4binBildHolz.jpg> <./Grafiken/entwicklung/5binLampe
+[43 <./Grafiken/entwicklung/4binBildHolz.jpg> <./Grafiken/entwicklung/5binLampe
 UndHolz.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[43 <./Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg>]
-<Grafiken/entwicklung/7unwichtigePolygone.jpg, id=580, 1027.84pt x 770.88pt>
+[44 <./Grafiken/entwicklung/6unwichtigeBereicheEingezeichnet.jpg>]
+<Grafiken/entwicklung/7unwichtigePolygone.jpg, id=613, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/7unwichtigePolygone.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/7unwichtigePolygone.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/7unwichtigePolygone.jpg  used on 
-input line 212.
+input line 203.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 203--204
+ [] 
+ []
+
+<Grafiken/entwicklung/7unwichtigeKonvexe.jpg, id=615, 1027.84pt x 770.88pt>
+File: Grafiken/entwicklung/7unwichtigeKonvexe.jpg Graphic file (type jpg)
+<use Grafiken/entwicklung/7unwichtigeKonvexe.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/7unwichtigeKonvexe.jpg  used on i
+nput line 212.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
 Overfull \hbox (23.70891pt too wide) in paragraph at lines 212--213
  [] 
  []
 
-<Grafiken/entwicklung/7unwichtigeKonvexe.jpg, id=582, 1027.84pt x 770.88pt>
-File: Grafiken/entwicklung/7unwichtigeKonvexe.jpg Graphic file (type jpg)
-<use Grafiken/entwicklung/7unwichtigeKonvexe.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/7unwichtigeKonvexe.jpg  used on i
-nput line 221.
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[45 <./Grafiken/entwicklung/7unwichtigePolygone.jpg>]
+<Grafiken/entwicklung/7unwichtigeKreise.jpg, id=624, 1027.84pt x 770.88pt>
+File: Grafiken/entwicklung/7unwichtigeKreise.jpg Graphic file (type jpg)
+<use Grafiken/entwicklung/7unwichtigeKreise.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/7unwichtigeKreise.jpg  used on in
+put line 221.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
 Overfull \hbox (23.70891pt too wide) in paragraph at lines 221--222
@@ -1840,31 +1880,15 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 221--222
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[44 <./Grafiken/entwicklung/7unwichtigePolygone.jpg>]
-<Grafiken/entwicklung/7unwichtigeKreise.jpg, id=590, 1027.84pt x 770.88pt>
-File: Grafiken/entwicklung/7unwichtigeKreise.jpg Graphic file (type jpg)
-<use Grafiken/entwicklung/7unwichtigeKreise.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/7unwichtigeKreise.jpg  used on in
-put line 230.
-(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
-
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 230--231
- [] 
- []
-
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[45 <./Grafiken/entwicklung/7unwichtigeKonvexe.jpg>]
-<Grafiken/entwicklung/7unwichtigeRechtecke.jpg, id=598, 1027.84pt x 770.88pt>
+[46 <./Grafiken/entwicklung/7unwichtigeKonvexe.jpg>]
+<Grafiken/entwicklung/7unwichtigeRechtecke.jpg, id=631, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/7unwichtigeRechtecke.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/7unwichtigeRechtecke.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/7unwichtigeRechtecke.jpg  used on
- input line 237.
+ input line 228.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 237--238
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 228--229
  [] 
  []
 
@@ -1872,18 +1896,36 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 237--238
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[46 <./Grafiken/entwicklung/7unwichtigeKreise.jpg>]
+[47 <./Grafiken/entwicklung/7unwichtigeKreise.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[47 <./Grafiken/entwicklung/7unwichtigeRechtecke.jpg>]
-<Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg, id=610, 1027.84pt x
+[48 <./Grafiken/entwicklung/7unwichtigeRechtecke.jpg>]
+<Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg, id=643, 1027.84pt x
  770.88pt>
 File: Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg Graphic file (t
 ype jpg)
 <use Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/10thresholdedEqualizedBirghtened.
-jpg  used on input line 254.
+jpg  used on input line 245.
+(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
+
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 245--246
+ [] 
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[49]
+<Grafiken/entwicklung/11thresholdedNotEqualized.jpg, id=650, 1027.84pt x 770.88
+pt>
+File: Grafiken/entwicklung/11thresholdedNotEqualized.jpg Graphic file (type jpg
+)
+<use Grafiken/entwicklung/11thresholdedNotEqualized.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/11thresholdedNotEqualized.jpg  us
+ed on input line 254.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
 Overfull \hbox (23.70891pt too wide) in paragraph at lines 254--255
@@ -1894,14 +1936,14 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 254--255
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[48]
-<Grafiken/entwicklung/11thresholdedNotEqualized.jpg, id=617, 1027.84pt x 770.88
-pt>
-File: Grafiken/entwicklung/11thresholdedNotEqualized.jpg Graphic file (type jpg
-)
-<use Grafiken/entwicklung/11thresholdedNotEqualized.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/11thresholdedNotEqualized.jpg  us
-ed on input line 263.
+[50 <./Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg>]
+<Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg, id=658, 1027
+.84pt x 770.88pt>
+File: Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg Graphic 
+file (type jpg)
+<use Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg>
+Package pdftex.def Info: Grafiken/entwicklung/12SimpleThresholdingConoturOutlin
+eCCOMP.jpg  used on input line 263.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
 Overfull \hbox (23.70891pt too wide) in paragraph at lines 263--264
@@ -1912,35 +1954,17 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 263--264
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[49 <./Grafiken/entwicklung/10thresholdedEqualizedBirghtened.jpg>]
-<Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg, id=625, 1027
-.84pt x 770.88pt>
-File: Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg Graphic 
-file (type jpg)
-<use Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg>
-Package pdftex.def Info: Grafiken/entwicklung/12SimpleThresholdingConoturOutlin
-eCCOMP.jpg  used on input line 272.
-(pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
-
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 272--273
- [] 
- []
-
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[50 <./Grafiken/entwicklung/11thresholdedNotEqualized.jpg>]
-<Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg, id=632, 1027.
+[51 <./Grafiken/entwicklung/11thresholdedNotEqualized.jpg>]
+<Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg, id=667, 1027.
 84pt x 770.88pt>
 File: Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg Graphic f
 ile (type jpg)
 <use Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/13SimpleThresholdingConoturOutlin
-eLIST.jpg  used on input line 279.
+eLIST.jpg  used on input line 270.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 279--280
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 270--271
  [] 
  []
 
@@ -1948,23 +1972,23 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 279--280
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[51 <./Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg>]
-Overfull \hbox (14.488pt too wide) in paragraph at lines 284--285
+[52 <./Grafiken/entwicklung/12SimpleThresholdingConoturOutlineCCOMP.jpg>]
+Overfull \hbox (14.488pt too wide) in paragraph at lines 275--276
 \T1/pnc/m/n/10.95 (-20) mit un-ter-schied-li-chen Ap-pro-xi-ma-ti-ons-ver-fah-r
 en wie \T1/pcr/m/n/10.95 CHAIN_-APPROX_-SIMPLE\T1/pnc/m/n/10.95 (-20) , \T1/pcr
 /m/n/10.95 CHAIN_-
  []
 
-<Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg, id=640, 1027.84pt x
+<Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg, id=674, 1027.84pt x
  770.88pt>
 File: Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg Graphic file (t
 ype jpg)
 <use Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/14AfterThresholdingContourFilled.
-jpg  used on input line 290.
+jpg  used on input line 281.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 290--291
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 281--282
  [] 
  []
 
@@ -1972,8 +1996,8 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 290--291
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[52 <./Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg>]
-Overfull \hbox (32.98456pt too wide) in paragraph at lines 299--300
+[53 <./Grafiken/entwicklung/13SimpleThresholdingConoturOutlineLIST.jpg>]
+Overfull \hbox (32.98456pt too wide) in paragraph at lines 290--291
 []\T1/pnc/m/n/10.95 (-20) Da nun kei-ne wei-te-ren Kon-tu-ren mehr ge-sucht wer
 -den (kein Auf-ruf von \T1/pcr/m/n/10.95 findContours()\T1/pnc/m/n/10.95 (-20) 
 ),
@@ -1983,15 +2007,15 @@ Overfull \hbox (32.98456pt too wide) in paragraph at lines 299--300
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[53 <./Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg>]
-<Grafiken/entwicklung/20StartImage.jpg, id=650, 1027.84pt x 770.88pt>
+[54 <./Grafiken/entwicklung/14AfterThresholdingContourFilled.jpg>]
+<Grafiken/entwicklung/20StartImage.jpg, id=684, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/20StartImage.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/20StartImage.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/20StartImage.jpg  used on input l
-ine 303.
+ine 294.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 303--304
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 294--295
  [] 
  []
 
@@ -1999,23 +2023,23 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 303--304
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[54 <./Grafiken/entwicklung/20StartImage.jpg>]
-<Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg, id=661, 185.0112pt x 1
+[55 <./Grafiken/entwicklung/20StartImage.jpg>]
+<Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg, id=695, 185.0112pt x 1
 95.129pt>
 File: Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg Graphic file (type
  jpg)
 <use Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg
-  used on input line 323.
+  used on input line 314.
 (pdftex.def)             Requested size: 240.51453pt x 253.66765pt.
-<Grafiken/entwicklung/22AngleCorrectur.jpg, id=663, 1027.84pt x 770.88pt>
+<Grafiken/entwicklung/22AngleCorrectur.jpg, id=697, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/22AngleCorrectur.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/22AngleCorrectur.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/22AngleCorrectur.jpg  used on inp
-ut line 332.
+ut line 323.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 332--333
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 323--324
  [] 
  []
 
@@ -2023,19 +2047,19 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 332--333
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[55 <./Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg>]
+[56 <./Grafiken/entwicklung/21AngleCorrecturDemonstration.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[56 <./Grafiken/entwicklung/22AngleCorrectur.jpg>]
-<Grafiken/entwicklung/23FilteringExtent.jpg, id=681, 1027.84pt x 770.88pt>
+[57 <./Grafiken/entwicklung/22AngleCorrectur.jpg>]
+<Grafiken/entwicklung/23FilteringExtent.jpg, id=716, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/23FilteringExtent.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/23FilteringExtent.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/23FilteringExtent.jpg  used on in
-put line 353.
+put line 344.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 353--354
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 344--345
  [] 
  []
 
@@ -2043,16 +2067,16 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 353--354
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[57]
-<Grafiken/entwicklung/24FilteringExtentAngle.jpg, id=692, 1027.84pt x 770.88pt>
+[58]
+<Grafiken/entwicklung/24FilteringExtentAngle.jpg, id=725, 1027.84pt x 770.88pt>
 
 File: Grafiken/entwicklung/24FilteringExtentAngle.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/24FilteringExtentAngle.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/24FilteringExtentAngle.jpg  used 
-on input line 361.
+on input line 352.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 361--362
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 352--353
  [] 
  []
 
@@ -2060,32 +2084,32 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 361--362
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[58 <./Grafiken/entwicklung/23FilteringExtent.jpg>]
+[59 <./Grafiken/entwicklung/23FilteringExtent.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[59 <./Grafiken/entwicklung/24FilteringExtentAngle.jpg>]
-<Grafiken/entwicklung/27AspectRatio.jpg, id=708, 1027.84pt x 770.88pt>
+[60 <./Grafiken/entwicklung/24FilteringExtentAngle.jpg>]
+<Grafiken/entwicklung/27AspectRatio.jpg, id=741, 1027.84pt x 770.88pt>
 File: Grafiken/entwicklung/27AspectRatio.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/27AspectRatio.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/27AspectRatio.jpg  used on input 
-line 381.
+line 372.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 381--382
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 372--373
  [] 
  []
 
-<Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg, id=710, 1027.84pt x 77
+<Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg, id=743, 1027.84pt x 77
 0.88pt>
 File: Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg Graphic file (type
  jpg)
 <use Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg
-  used on input line 392.
+  used on input line 383.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 392--393
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 383--384
  [] 
  []
 
@@ -2093,20 +2117,20 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 392--393
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[60 <./Grafiken/entwicklung/27AspectRatio.jpg>]
+[61 <./Grafiken/entwicklung/27AspectRatio.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[61 <./Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg>]
-<Grafiken/entwicklung/31FilteredBySimilarity.jpg, id=726, 1027.84pt x 770.88pt>
+[62 <./Grafiken/entwicklung/30FilteredByExtentAspectAngle.jpg>]
+<Grafiken/entwicklung/31FilteredBySimilarity.jpg, id=759, 1027.84pt x 770.88pt>
 
 File: Grafiken/entwicklung/31FilteredBySimilarity.jpg Graphic file (type jpg)
 <use Grafiken/entwicklung/31FilteredBySimilarity.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/31FilteredBySimilarity.jpg  used 
-on input line 404.
+on input line 395.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 404--405
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 395--396
  [] 
  []
 
@@ -2114,17 +2138,17 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 404--405
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[62]
-<Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg, id=733, 1027.84pt x 770.
+[63]
+<Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg, id=767, 1027.84pt x 770.
 88pt>
 File: Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg Graphic file (type j
 pg)
 <use Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg>
 Package pdftex.def Info: Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg  
-used on input line 411.
+used on input line 402.
 (pdftex.def)             Requested size: 441.96259pt x 331.47194pt.
 
-Overfull \hbox (23.70891pt too wide) in paragraph at lines 411--412
+Overfull \hbox (23.70891pt too wide) in paragraph at lines 402--403
  [] 
  []
 
@@ -2132,39 +2156,39 @@ Overfull \hbox (23.70891pt too wide) in paragraph at lines 411--412
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[63 <./Grafiken/entwicklung/31FilteredBySimilarity.jpg>]
-<Grafiken/resultate/resultatLying2.jpg, id=741, 2569.6pt x 1927.2pt>
+[64 <./Grafiken/entwicklung/31FilteredBySimilarity.jpg>]
+<Grafiken/resultate/resultatLying2.jpg, id=774, 2569.6pt x 1927.2pt>
 File: Grafiken/resultate/resultatLying2.jpg Graphic file (type jpg)
 <use Grafiken/resultate/resultatLying2.jpg>
 Package pdftex.def Info: Grafiken/resultate/resultatLying2.jpg  used on input l
-ine 424.
+ine 415.
 (pdftex.def)             Requested size: 256.97505pt x 192.7313pt.
 ) (./Chapter5.tex
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[64 <./Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg>]
+[65 <./Grafiken/entwicklung/32BlankFilteredBySimilarity.jpg>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[65 <./Grafiken/resultate/resultatLying2.jpg>]
+[66 <./Grafiken/resultate/resultatLying2.jpg>]
 chapter 5.
-<Grafiken/resultate/resultatStanding2.jpg, id=754, 1204.5pt x 1204.5pt>
+<Grafiken/resultate/resultatStanding2.jpg, id=787, 1204.5pt x 1204.5pt>
 File: Grafiken/resultate/resultatStanding2.jpg Graphic file (type jpg)
 <use Grafiken/resultate/resultatStanding2.jpg>
 Package pdftex.def Info: Grafiken/resultate/resultatStanding2.jpg  used on inpu
 t line 29.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
-[66
+[67
 
 ]
-<Grafiken/resultate/resultatStanding1.jpg, id=761, 963.6pt x 963.6pt>
+<Grafiken/resultate/resultatStanding1.jpg, id=794, 963.6pt x 963.6pt>
 File: Grafiken/resultate/resultatStanding1.jpg Graphic file (type jpg)
 <use Grafiken/resultate/resultatStanding1.jpg>
 Package pdftex.def Info: Grafiken/resultate/resultatStanding1.jpg  used on inpu
 t line 38.
 (pdftex.def)             Requested size: 96.36565pt x 96.36565pt.
-<Grafiken/resultate/resultatLying1.jpg, id=764, 1027.84pt x 770.88pt>
+<Grafiken/resultate/resultatLying1.jpg, id=797, 1027.84pt x 770.88pt>
 File: Grafiken/resultate/resultatLying1.jpg Graphic file (type jpg)
 <use Grafiken/resultate/resultatLying1.jpg>
 Package pdftex.def Info: Grafiken/resultate/resultatLying1.jpg  used on input l
@@ -2179,13 +2203,13 @@ ine 55.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[67 <./Grafiken/resultate/resultatStanding2.jpg> <./Grafiken/resultate/resultat
+[68 <./Grafiken/resultate/resultatStanding2.jpg> <./Grafiken/resultate/resultat
 Standing1.jpg> <./Grafiken/resultate/resultatLying1.jpg>]
 
 LaTeX Warning: Reference `fig: Weiteres Ergebnis von Kuh in Seitenlage' on page
- 68 undefined on input line 67.
+ 69 undefined on input line 67.
 
-<Grafiken/resultate/resultatFehlerhaft.jpg, id=771, 770.88pt x 578.16pt>
+<Grafiken/resultate/resultatFehlerhaft.jpg, id=805, 770.88pt x 578.16pt>
 File: Grafiken/resultate/resultatFehlerhaft.jpg Graphic file (type jpg)
 <use Grafiken/resultate/resultatFehlerhaft.jpg>
 Package pdftex.def Info: Grafiken/resultate/resultatFehlerhaft.jpg  used on inp
@@ -2195,8 +2219,8 @@ ut line 70.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[68]
-<Grafiken/resultate/verbessertesResultat.jpg, id=777, 770.88pt x 578.16pt>
+[69]
+<Grafiken/resultate/verbessertesResultat.jpg, id=812, 770.88pt x 578.16pt>
 File: Grafiken/resultate/verbessertesResultat.jpg Graphic file (type jpg)
 <use Grafiken/resultate/verbessertesResultat.jpg>
 Package pdftex.def Info: Grafiken/resultate/verbessertesResultat.jpg  used on i
@@ -2206,18 +2230,18 @@ nput line 79.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[69 <./Grafiken/resultate/resultatFehlerhaft.jpg> <./Grafiken/resultate/verbess
+[70 <./Grafiken/resultate/resultatFehlerhaft.jpg> <./Grafiken/resultate/verbess
 ertesResultat.jpg>]
 chapter 6.
-[70
+[71
 
 ]) (./Chapter7.tex
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[71]
+[72]
 chapter 7.
-) [72
+) [73
 
 ] (./Affirmation.tex
 chapter without number
@@ -2241,12 +2265,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<Grafiken/unterschrift.jpg, id=812, 77.088pt x 35.1714pt>
+<Grafiken/unterschrift.jpg, id=845, 77.088pt x 35.1714pt>
 File: Grafiken/unterschrift.jpg Graphic file (type jpg)
 <use Grafiken/unterschrift.jpg>
 Package pdftex.def Info: Grafiken/unterschrift.jpg  used on input line 14.
 (pdftex.def)             Requested size: 113.81102pt x 51.92726pt.
-) [73
+) [74
 
 
  <./Grafiken/unterschrift.jpg>]
@@ -2269,15 +2293,15 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 18.
 Package tocbasic Info: Using my definition of `\numberline' on input line 19.
 Package tocbasic Info: Using my definition of `\numberline' on input line 20.
 Package tocbasic Info: Using my definition of `\numberline' on input line 22.
- [74
-
-]
 Package tocbasic Info: Using my definition of `\numberline' on input line 23.
 Package tocbasic Info: Using my definition of `\numberline' on input line 24.
 Package tocbasic Info: Using my definition of `\numberline' on input line 25.
 Package tocbasic Info: Using my definition of `\numberline' on input line 26.
 Package tocbasic Info: Using my definition of `\numberline' on input line 27.
 Package tocbasic Info: Using my definition of `\numberline' on input line 28.
+ [75
+
+]
 Package tocbasic Info: Using my definition of `\numberline' on input line 29.
 Package tocbasic Info: Using my definition of `\numberline' on input line 30.
 Package tocbasic Info: Using my definition of `\numberline' on input line 31.
@@ -2303,11 +2327,6 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 50.
 Package tocbasic Info: Using my definition of `\numberline' on input line 51.
 Package tocbasic Info: Using my definition of `\numberline' on input line 53.
 Package tocbasic Info: Using my definition of `\numberline' on input line 54.
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[75]
 Package tocbasic Info: Using my definition of `\numberline' on input line 55.
 Package tocbasic Info: Using my definition of `\numberline' on input line 56.
 Package tocbasic Info: Using my definition of `\numberline' on input line 57.
@@ -2662,7 +2681,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [89]
-<Grafiken/mmDomain.jpg, id=1043, 4301.06876pt x 3796.1825pt>
+<Grafiken/mmDomain.jpg, id=1053, 4301.06876pt x 3796.1825pt>
 File: Grafiken/mmDomain.jpg Graphic file (type jpg)
 <use Grafiken/mmDomain.jpg>
 Package pdftex.def Info: Grafiken/mmDomain.jpg  used on input line 194.
@@ -2676,7 +2695,12 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
  <./Grafiken/mmDomain.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
- (./Mueller-Dominique_BT.aux)
+ (./Mueller-Dominique_BT.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `Mueller-Dominique_BT.out' has not changed.
@@ -2690,11 +2714,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18344 strings out of 492164
- 299369 string characters out of 6129088
+ 18361 strings out of 492164
+ 299595 string characters out of 6129088
  652197 words of memory out of 5000000
- 21778 multiletter control sequences out of 15000+600000
- 61704 words of font info for 192 fonts, out of 8000000 for 9000
+ 21781 multiletter control sequences out of 15000+600000
+ 61991 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,13n,72p,10079b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texm
@@ -2710,10 +2734,10 @@ onts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/n
 cntrsbk/uncb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.
 pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive
 /2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Mueller-Dominique_BT.pdf (94 pages, 16795531 bytes).
+Output written on Mueller-Dominique_BT.pdf (94 pages, 16800340 bytes).
 PDF statistics:
- 1297 PDF objects out of 1440 (max. 8388607)
- 1101 compressed objects within 12 object streams
- 274 named destinations out of 1000 (max. 500000)
- 38517 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1306 PDF objects out of 1440 (max. 8388607)
+ 1118 compressed objects within 12 object streams
+ 283 named destinations out of 1000 (max. 500000)
+ 38509 words of extra memory for PDF output out of 42996 (max. 10000000)
 
