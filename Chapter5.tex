@@ -6,11 +6,11 @@
 \chapter{Resultate}
 
 
-Im Rahmen der vorliegenden Arbeit wurde eine Domänenanalyse zur automatischen Analyse von Kamerabildern bei der Geburt von Kälbern gemacht. Dabei wurde ein umfassendes System modelliert, welches sowohl die automatische Analyse von Kamerabildern als auch die Benachrichtigung der Stakeholder zur Geburt ermöglicht. Zudem erlaubt das modellierte System die Erfassung der medizinischen Daten von Kuh und Kalb. Dies ermöglicht dem Landwirten oder Tierarzt beispielsweise Zugriff auf die Krankheitsgeschichte oder den Verlauf der letzten Geburten einer Kuh. Dies unterstützt eine Beurteilung der Situation durch Fachpersonen. 
+Im Rahmen der vorliegenden Arbeit wurde eine Domänenanalyse zur automatischen Analyse von Kamerabildern bei der Geburt von Kälbern gemacht. Dabei wurde ein umfassendes System modelliert, welches sowohl die automatische Analyse von Kamerabildern als auch die Benachrichtigung der Stakeholder ermöglicht. Zudem erlaubt das modellierte System die Erfassung der medizinischen Daten von Kuh und Kalb. Dies ermöglicht dem Landwirten oder Tierarzt beispielsweise Zugriff auf die Krankheitsgeschichte oder den Verlauf der letzten Geburten einer Kuh. Dies unterstützt eine Beurteilung der Situation durch Fachpersonen. 
 
 Dabei ist der Kern der Domänenanalyse die Identifikation von Geburtsmerkmalen. Im Wesentlichen hat sich ergeben, dass das System bei Erkennung von seitlichem Liegen und Anwesenheit der Wasser- oder Schleimblase eine Benachrichtigung an die Stakeholder auslösen muss. 
 
-Zudem wurde ein Teil des modellierten Systems in Code umgesetzt. Es wurde ein flexibles und stark konfigurierbares System entwickelt, welche die automatische Analyse von Kamerabildern ermöglicht.
+Der Kern des modellierten Systems wurde in Code umgesetzt. Es wurde ein flexibles und stark konfigurierbares System entwickelt, welches die automatische Analyse von Kamerabildern ermöglicht.
 
 In den folgenden Abbildungen bedeuten grün eingefärbte Flächen, dass das System Konturen erkannt hat, diese aber nicht als Merkmal für eine Kuh in Seitenlage betrachtet. Rote Flächen bedeuten, dass das System diese Kontur als Merkmal für Seitenlage interpretiert.
 
@@ -18,7 +18,7 @@ In den Abbildungen \ref{fig: Korrektes Ergebnis von Analyse der stehenden Kuh} u
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/resultatStanding2.jpg}
+	\includegraphics[scale=0.3]{Grafiken/resultate/resultatStanding2.jpg}
 	\caption{Korrektes Ergebnis von Analyse der stehenden Kuh} 
 	\label{fig: Korrektes Ergebnis von Analyse der stehenden Kuh} 
 \end{figure}
@@ -27,7 +27,7 @@ In den Abbildungen \ref{fig: Korrektes Ergebnis von Analyse der stehenden Kuh} u
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/resultatStanding1.jpg}
+	\includegraphics[scale=0.3]{Grafiken/resultate/resultatStanding1.jpg}
 	\caption{Weiteres korrektes Ergebnis von Analyse der stehenden Kuh} 
 	\label{fig: Weiteres korrektes Ergebnis von Analyse der stehenden Kuh} 
 \end{figure}
@@ -36,7 +36,7 @@ In den Abbildungen \ref{fig: Korrektes Ergebnis von Analyse der Kuh in Seitenlag
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/resultatLying1.jpg}
+	\includegraphics[scale=0.43]{Grafiken/resultate/resultatLying1.jpg}
 	\caption{Korrektes Ergebnis von Analyse der Kuh in Seitenlage} 
 	\label{fig: Korrektes Ergebnis von Analyse der Kuh in Seitenlage} 
 \end{figure}
@@ -44,7 +44,7 @@ In den Abbildungen \ref{fig: Korrektes Ergebnis von Analyse der Kuh in Seitenlag
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/resultatLying2.jpg}
+	\includegraphics[scale=1.5]{Grafiken/resultate/resultatLying2.jpg}
 	\caption{Weiteres korrektes Ergebnis von Analyse der Kuh in Seitenlage} 
 	\label{fig: Weiteres korrektes Ergebnis von Analyse der Kuh in Seitenlage} 
 \end{figure}
@@ -59,7 +59,7 @@ Das System bietet zahlreiche weitere Konfigurationsmöglichkeiten. Die zwei gena
 Als Beispiel dient das Ergebnis, welches in Abbildung \ref{fig: Weiteres Ergebnis von Kuh in Seitenlage} sichtbar ist. Dieses Resultat wurde mit \texttt{FILTER_BY_ANGLE=False} und und \texttt{ADVANCED_UNIMPORTANT_COLOR_RANGE = False} erzielt. 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/resultatFehlerhaft.jpg}
+	\includegraphics[scale=0.5]{Grafiken/resultate/resultatFehlerhaft.jpg}
 	\caption{Fehlerhaftes Ergebnis von Analyse der Kuh in Seitenlage} 
 	\label{fig: Fehlerhaftes Ergebnis von Analyse der Kuh in Seitenlage} 
 \end{figure}
@@ -68,7 +68,7 @@ Durch die Konfiguration von \texttt{ADVANCED_UNIMPORTANT_COLOR_RANGE=True} und d
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.1]{Grafiken/resultate/verbessertesResultat.jpg}
+	\includegraphics[scale=0.5]{Grafiken/resultate/verbessertesResultat.jpg}
 	\caption{Verbessertes Ergebnis von Analyse der Kuh in Seitenlage} 
 	\label{fig: Verbessertes Ergebnis von Analyse der Kuh in Seitenlage} 
 \end{figure}
