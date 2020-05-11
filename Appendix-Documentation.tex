@@ -2,8 +2,8 @@
 % CHAPTER 6: Anhang: Dokumentation
 % ================================================================
 \section{Dokumentation zum entwickelten System }
-\subsection{Computer für Entwicklung}
-\subsubsection{Basisinformationen}
+\subsection{Entwicklungsplattform}
+\subsubsection{Hardware und Betriebssystem}
 \begin{table}[H]
 	\rowcolors{2}{maroon!10}{white!100}
 	\arrayrulecolor{darkmaroon} 
@@ -29,7 +29,7 @@
 	\label{fig: Basisinformationen zum Computer Entwicklung}
 \end{table}
 
-\subsection{Eingesetzte Software}
+\subsection{Softwarekomponenten}
 Nachfolgend wird die wertschöpfende Software mit dem entsprechenden Verwendungszweck und der eingesetzen Version genannt.
 \begin{table}[H]
 	\rowcolors{2}{maroon!10}{white!100}
@@ -43,8 +43,8 @@ Nachfolgend wird die wertschöpfende Software mit dem entsprechenden Verwendungs
 		Software & Verwendungszweck & Version\\
 		
 		\midrule 
-		Python  & Programmiersprache für Housekeeping und Auslösung der spezfischen Aktionen ausgehend vom Erreichen oder Nichterreichen der merkmalsbezogenen Schwellwertes & 3.7.4\\
-		OpenCV &  Programmbibliothek mit Algorithmen für die Bildverarbeitung und maschinelles Sehen & 4.2.0 \\ 		
+		Python  & Programmiersprache für Housekeeping und Auslösung der spezfischen Aktionen ausgehend vom Erreichen oder Nichterreichen der merkmalsbezogenen Schwellwertes & 3.7.4\footnote{\url{https://www.python.org/}}\\
+		OpenCV &  Programmbibliothek mit Algorithmen für die Bildverarbeitung und maschinelles Sehen & 4.2.0\footnote{\url{https://opencv.org/}} \\ 		
 
 		\bottomrule
 	\end{tabular}
@@ -53,8 +53,8 @@ Nachfolgend wird die wertschöpfende Software mit dem entsprechenden Verwendungs
 \end{table}
 
 \subsection{Installation von OpenCV und vorausgesetzten Softwaremodulen}
-
-\subsubsection{Xcode installieren und Lizenzvereinbarung akzeptieren} 
+Dieser Abschnitt gilt nur für Computer mit Mac OS X als Betriebssystem.
+\subsubsection{Xcode installieren} 
 \begin{itemize}
 	\item Im App Store anmelden und Xcode herunterladen
 	\item \texttt{sudo xcodebuild -license}
@@ -163,37 +163,13 @@ Nachfolgend wird die wertschöpfende Software mit dem entsprechenden Verwendungs
 \end{itemize}
 
 
-\subsection{Nützliche Links}
-
-\begin{table}[H]
-	\rowcolors{2}{maroon!10}{white!100}
-	\arrayrulecolor{darkmaroon} 
-	
-	\begin{tabular}{p{6cm} p{9cm}|}
-		
-		\toprule[1pt]
-		\rowcolor{maroon!30}
-		
-		Stichwort & URL \\
-		
-		\midrule 	
-		Informationen zu OpenCV & \url{opencv.org}\\
-		OpenCV-Python Tutorials und Dokumentation & \url{opencv-python-tutroals.readthedocs.io/en/latest}\\
-
-		
-		\bottomrule
-	\end{tabular}
-	\caption{Nützliche Links}
-	\label{fig: Nützliche Links}
-\end{table}
-
 \begin{landscape}
 \section{Mindmap als Entwurf für Modellierung der Domäne}
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=.09]{Grafiken/mmDomain.jpg}
-	\caption{Mindmap als Entwurf für die Modellierung der Domäne. Farbcodierung gemäss Tabelle }
-	\label{fig: Mindmap als Entwurf die für Modellierung der Domäne. Farbcodierung gemäss Tabelle}
+	\caption{Mindmap als Entwurf für die Modellierung der Domäne }
+	\label{fig: Mindmap als Entwurf die für Modellierung der Domäne}
 \end{figure}
 	
 \end{landscape}

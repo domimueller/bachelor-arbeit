@@ -5,6 +5,10 @@ Agrarbericht.ch  \harvardyearleft n.d.\harvardyearright ,
   `www.agrarbericht.ch'.
 \newline\harvardurl{https://agrarbericht.ch/de/betrieb/strukturen/betriebe?highlight=gr{\"{o}}ssenklasse}
 
+\harvarditem{Deck \harvardand\ Neuendorf}{2010}{Deck2010}
+Deck, K.-G. \harvardand\ Neuendorf, H.  \harvardyearleft 2010\harvardyearright
+  , {\em {Java-Grundkurs f{\"{u}}r Wirtschaftsinformatiker}}, Vieweg +Teubner.
+
 \harvarditem{Evans}{2015}{Evans2015}
 Evans, E.  \harvardyearleft 2015\harvardyearright , {\em {Domain-Driven
   Design}}, dogear Publishing, Indianapolis.
@@ -25,7 +29,8 @@ Hirsbrunner, G.  \harvardyearleft 2020\harvardyearright , `{Interview
 
 \harvarditem{Hofer}{2010}{Hofer}
 Hofer, T.  \harvardyearleft 2010\harvardyearright , {\em {Strukturwandel in der
-  Z{\"{u}}rcher Landwirtschaft}}, Z{\"{u}}rich.
+  Z{\"{u}}rcher Landwirtschaft}}, Z{\"{u}}rich, Statistisches Amt des Kantons,
+  Z{\"{u}}rich.
 \newline\harvardurl{www.statistik.zh.ch}
 
 \harvarditem{Kasprowicz \harvardand\ Rieger}{2019}{Kasprowicz2019}
@@ -86,6 +91,10 @@ Saint-Dizier, M. \harvardand\ Chastant-Maillard, S.  \harvardyearleft
   2015\harvardyearright , `{Methods and on-farm devices to predict calving time
   in cattle}', {\em Veterinary Journal} {\bf 205}(3),~349--356.
 \newline\harvardurl{http://dx.doi.org/10.1016/j.tvjl.2015.05.006}
+
+\harvarditem{Sommerville}{2016}{Sommerville2016}
+Sommerville, I.  \harvardyearleft 2016\harvardyearright , {\em {Software
+  Engineering}}, Pearson.
 
 \harvarditem[Stefan et~al.]{Stefan, Mante \harvardand\
   Pfefferli}{2003}{Stefan2003}
