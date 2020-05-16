@@ -3,12 +3,13 @@
 \harvarditem{Agrarbericht.ch}{n.d.}{Unbekannta}
 Agrarbericht.ch  \harvardyearleft n.d.\harvardyearright ,
   `www.agrarbericht.ch'.
-\newblock zuletzt besucht am 12.05.2020.
+\newblock Zuletzt besucht am 12.05.2020.
 \newline\harvardurl{https://agrarbericht.ch/de/betrieb/strukturen/betriebe?highlight=gr{\"{o}}ssenklasse}
 
 \harvarditem{Deck \harvardand\ Neuendorf}{2010}{Deck2010}
 Deck, K.-G. \harvardand\ Neuendorf, H.  \harvardyearleft 2010\harvardyearright
-  , {\em {Java-Grundkurs f{\"{u}}r Wirtschaftsinformatiker}}, Vieweg +Teubner.
+  , {\em {Java-Grundkurs f{\"{u}}r Wirtschaftsinformatiker}}, Vieweg +Teubner,
+  Wiesbaden.
 
 \harvarditem{Evans}{2015}{Evans2015}
 Evans, E.  \harvardyearleft 2015\harvardyearright , {\em {Domain-Driven
@@ -22,7 +23,7 @@ Evans, E.  \harvardyearleft 2015\harvardyearright , {\em {Domain-Driven
   Device}{2020}{Firouzi2020}
 Firouzi, F., Chakrabarty, K., Nassif, S. \harvardand\ Device, F.
   \harvardyearleft 2020\harvardyearright , {\em {Intelligent Internet of
-  Things}}, Springer Nature Switzerland AG.
+  Things}}, Springer Nature, Cham.
 
 \harvarditem{Hirsbrunner}{2020}{Hirsbrunner2020}
 Hirsbrunner, G.  \harvardyearleft 2020\harvardyearright , `{Interview
@@ -32,12 +33,18 @@ Hirsbrunner, G.  \harvardyearleft 2020\harvardyearright , `{Interview
 Hofer, T.  \harvardyearleft 2010\harvardyearright , {\em {Strukturwandel in der
   Z{\"{u}}rcher Landwirtschaft}}, Z{\"{u}}rich, Statistisches Amt des Kantons,
   Z{\"{u}}rich.
-\newblock zuletzt besucht am 12.05.2020.
+\newblock Zuletzt besucht am 12.05.2020.
 \newline\harvardurl{www.statistik.zh.ch}
+
+\harvarditem[Howse et~al.]{Howse, Joshi \harvardand\ Beyeler}{2016}{Howse2016}
+Howse, J., Joshi, P. \harvardand\ Beyeler, M.  \harvardyearleft
+  2016\harvardyearright , {\em {OpenCV: Computer Vision Projects with Python}},
+  Packt Publishing, Birmingham.
 
 \harvarditem{Kasprowicz \harvardand\ Rieger}{2019}{Kasprowicz2019}
 Kasprowicz, D. \harvardand\ Rieger, S.  \harvardyearleft 2019\harvardyearright
-  , {\em {Handbuch Virtualit{\"{a}}t}}, Springer Fachmedien Wiesbaden GmbH.
+  , {\em {Handbuch Virtualit{\"{a}}t}}, Springer Fachmedien Wiesbaden GmbH,
+  Wiesbaden.
 
 \harvarditem{Kohler}{2020}{Kohler2020}
 Kohler, S.  \harvardyearleft 2020\harvardyearright , `{Interview 19.3.2020}'.
@@ -47,6 +54,8 @@ Kohler, S.  \harvardyearleft 2020\harvardyearright , `{Interview 19.3.2020}'.
 Lange, K., Fischer-Tenhagen, C. \harvardand\ Heuwieser, W.  \harvardyearleft
   2017\harvardyearright , `{Predicting stage 2 of calving in Holstein-Friesian
   heifers}', {\em Journal of Dairy Science} {\bf 100}(6),~10.
+\newblock Zuletzt besucht am 12.05.2020.
+\newline\harvardurl{https://doi.org/10.3168/jds.2016-12024}
 
 \harvarditem{M{\"{u}}ller}{2019}{Muller2019}
 M{\"{u}}ller, P.  \harvardyearleft 2019\harvardyearright , `{Pers{\"{o}}nliche
@@ -78,31 +87,41 @@ Pahl, C., Hartung, E., Grothmann, A., Mahlkow-Nerge, K. \harvardand\
   Haeussermann, A.  \harvardyearleft 2014\harvardyearright , `{Rumination
   activity of dairy cows in the 24 hours before and after calving}', {\em
   Journal of Dairy Science} {\bf 97}(11),~3--7.
-\newblock zuletzt besucht am 12.05.2020.
+\newblock Zuletzt besucht am 12.05.2020.
 \newline\harvardurl{http://dx.doi.org/10.3168/jds.2014-8194}
 
 \harvarditem[Rupp et~al.]{Rupp, Stefan \harvardand\
   Sophisten}{2012}{Uml-modellierung2012}
 Rupp, C., Stefan, Q. \harvardand\ Sophisten, D.  \harvardyearleft
-  2012\harvardyearright , {\em {UML 2 glasklar}}, 4 edn, Carl Hanser Verlag
-  M{\"{u}}nchen, N{\"{u}}rnberg.
+  2012\harvardyearright , {\em {UML 2 glasklar}}, Carl Hanser Verlag,
+  M{\"{u}}nchen und N{\"{u}}rnberg.
 
 \harvarditem{Saint-Dizier \harvardand\
   Chastant-Maillard}{2015}{Saint-Dizier2015}
 Saint-Dizier, M. \harvardand\ Chastant-Maillard, S.  \harvardyearleft
   2015\harvardyearright , `{Methods and on-farm devices to predict calving time
   in cattle}', {\em Veterinary Journal} {\bf 205}(3),~349--356.
-\newblock zuletzt besucht am 12.05.2020.
+\newblock Zuletzt besucht am 12.05.2020.
 \newline\harvardurl{http://dx.doi.org/10.1016/j.tvjl.2015.05.006}
+
+\harvarditem[Sauermost et~al.]{Sauermost, Freudig, Bonk, Sendtko, Genaust
+  \harvardand\ Gack}{1999}{Sauermost1999a}
+Sauermost, R., Freudig, D., Bonk, M., Sendtko, A., Genaust, H. \harvardand\
+  Gack, C.  \harvardyearleft 1999\harvardyearright , {Lexikon der Biologie},
+  Spektrum Akademischer Verlag, Heidelberg.
+\newblock Zuletzt besucht am 12.05.2020.
+\newline\harvardurl{https://www.spektrum.de/lexikon/biologie/}
 
 \harvarditem{Sommerville}{2016}{Sommerville2016}
 Sommerville, I.  \harvardyearleft 2016\harvardyearright , {\em {Software
-  Engineering}}, Pearson.
+  Engineering}}, Pearson, Boston.
 
 \harvarditem[Stefan et~al.]{Stefan, Mante \harvardand\
   Pfefferli}{2003}{Stefan2003}
 Stefan, M., Mante, J. \harvardand\ Pfefferli, S.  \harvardyearleft
-  2003\harvardyearright , `{Der agrarstrukturelle Wandel in der Schweiz}'.
+  2003\harvardyearright , `{Der agrarstrukturelle Wandel in der Schweiz}', {\em
+  Eidgen{\"{o}}ssische Forschungsanstalt f{\"{u}}r Agrarwirtschaft und
+  Landtechnik (FAT)} .
 
 \harvarditem[Streyl et~al.]{Streyl, Sauter-Louis, Braunert, Lange, Weber
   \harvardand\ Zerbe}{2011}{Streyl2011}
@@ -115,8 +134,8 @@ Streyl, D., Sauter-Louis, C., Braunert, A., Lange, D., Weber, F. \harvardand\
 Traulsen, K. \harvardand\ Tischer, M.  \harvardyearleft 2013\harvardyearright ,
   {Geburts{\"{u}}berwachung und Geburtshilfe beim Rind}, Technical report,
   Boehringer Ingelheim Vetmedica GmbH, Ingelheim am Rhein.
-\newblock zuletzt besucht am 12.05.2020.
-\newline\harvardurl{https://www.vetmedica.de/2013-01-metacam-geburtshilfebroschuere-561.pdfx}
+\newblock Zuletzt besucht am 12.05.2020.
+\newline\harvardurl{https://www.vetmedica.de/2013-01-metacam-geburtshilfebroschuere-561.pdfx.}
 
 \harvarditem{Vernon}{2016}{Vernon2016}
 Vernon, V.  \harvardyearleft 2016\harvardyearright , {\em {Domain-Driven Design
@@ -124,7 +143,7 @@ Vernon, V.  \harvardyearleft 2016\harvardyearright , {\em {Domain-Driven Design
 
 \harvarditem{Vetion.de}{2009}{GmbH2009}
 Vetion.de  \harvardyearleft 2009\harvardyearright , `www.vetion.de'.
-\newblock zuletzt besucht am 12.05.2020.
+\newblock Zuletzt besucht am 12.05.2020.
 \newline\harvardurl{www.vetion.de/lexikon}
 
 \end{thebibliography}

@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Mueller-Dominique_BT.aux
 The style file: agsm.bst
 Database file #1: library.bib
-You've used 24 entries,
+Warning--empty booktitle in Sauermost1999a
+You've used 26 entries,
             2909 wiz_defined-function locations,
-            792 strings with 8261 characters,
-and the built_in function-call counts, 97821 in all, are:
-= -- 16030
-> -- 1179
+            807 strings with 8668 characters,
+and the built_in function-call counts, 110488 in all, are:
+= -- 18109
+> -- 1382
 < -- 0
-+ -- 7659
-- -- 357
-* -- 8348
-:= -- 19761
-add.period$ -- 30
-call.type$ -- 24
-change.case$ -- 329
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 338
-empty$ -- 691
-format.name$ -- 428
-if$ -- 17506
++ -- 8696
+- -- 420
+* -- 9482
+:= -- 22250
+add.period$ -- 34
+call.type$ -- 26
+change.case$ -- 355
+chr.to.int$ -- 24
+cite$ -- 27
+duplicate$ -- 371
+empty$ -- 753
+format.name$ -- 497
+if$ -- 19786
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 87
-num.names$ -- 247
-pop$ -- 160
+missing$ -- 27
+newline$ -- 97
+num.names$ -- 269
+pop$ -- 168
 preamble$ -- 1
-purify$ -- 360
+purify$ -- 390
 quote$ -- 0
-skip$ -- 258
+skip$ -- 277
 stack$ -- 0
-substring$ -- 22667
-swap$ -- 36
-text.length$ -- 336
+substring$ -- 25637
+swap$ -- 38
+text.length$ -- 364
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 0
-while$ -- 513
+type$ -- 84
+warning$ -- 1
+while$ -- 555
 width$ -- 0
-write$ -- 321
+write$ -- 361
+(There was 1 warning)
