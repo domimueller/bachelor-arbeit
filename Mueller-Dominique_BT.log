@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  17 MAY 2020 01:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  17 MAY 2020 02:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2794,11 +2794,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24617 strings out of 492164
- 420711 string characters out of 6129088
+ 24619 strings out of 492164
+ 420726 string characters out of 6129088
  724627 words of memory out of 5000000
  27861 multiletter control sequences out of 15000+600000
- 63882 words of font info for 207 fonts, out of 8000000 for 9000
+ 63943 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,12n,72p,10079b,626s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texm
@@ -2816,7 +2816,7 @@ fb><c:/texlive/2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/
 2019/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2019/texmf-dist
 /fonts/type1/urw/ncntrsbk/uncri8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/u
 rw/zapfding/uzdr.pfb>
-Output written on Mueller-Dominique_BT.pdf (97 pages, 16943913 bytes).
+Output written on Mueller-Dominique_BT.pdf (97 pages, 16943644 bytes).
 PDF statistics:
  1473 PDF objects out of 1728 (max. 8388607)
  1278 compressed objects within 13 object streams

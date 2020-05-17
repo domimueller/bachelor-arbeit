@@ -14,7 +14,7 @@ Die Tabellen \ref{tab: Bewertung der Anwesenheit und Abwesenheit von Merkmalen} 
 Wie in Formel \ref{Linerarkombination zur Geburtsprognose} abgebildet, werden bei Erkennung eines oder mehrerer Merkmale in einem Bild die Gewichtungen dieser Merkmale addiert. Merkmale, welche als Geburtsanzeichen dienen, haben eine positive Gewichtung und erhöhen dadurch das Endergebnis. Merkmale, welche darauf hinweisen, dass zurzeit keine Entbindung stattfindet, haben eine negative Gewichtung und senken das Endergebnis.
 
 
-Das Resultat dieser Berechnung bezeichnet der Autor als \flqq qualitative Situationsbewertung\frqq. Diese wird mit einem Schwellwert verglichen, um zu entscheiden, ob eine Benachrichtigung verschickt wird.
+Das Resultat dieser Berechnung bezeichnet der Autor als \glqq qualitative Situationsbewertung\grqq{}. Diese wird mit einem Schwellwert verglichen, um zu entscheiden, ob eine Benachrichtigung verschickt wird.
 
 Dabei kann die qualitative Situationsbewertung anhand der folgenden Linearkombination ermittelt werden: 
 
@@ -66,7 +66,7 @@ Dabei steht $q$ für den Schwellwert, welcher in der Domänenanalyse ermittelt w
 \begin{landscape}
 
 \section{Modellierung der Lösung}
-Für die Dokumentation der Lösung verwendet der Autor die UML-Notation. Bei der Modellierung werden Empfehlungen aus dem Buch \flqq{}UML 2 glasklar\frqq{} \cite{Uml-modellierung2012} berücksichtigt (Diagramme siehe nächste Seite). 
+Für die Dokumentation der Lösung verwendet der Autor die UML-Notation. Bei der Modellierung werden Empfehlungen aus dem Buch \glqq{}UML 2 glasklar\grqq{} \cite{Uml-modellierung2012} berücksichtigt (Diagramme siehe nächste Seite). 
 
 \subsection{Modell Image Analysis }
 \begin{figure}[H]
@@ -125,7 +125,7 @@ Als Eingabebild dient ein Graustufenbild. Grundsätzlich können mithilfe des Pa
 
 
 
-Nebst der Funktion \texttt{threshold()} und dem Typ \texttt{THRESH_BINARY} bietet OpenCV weiteren Typen wie \texttt{THRESH_BINARY_INV} oder \texttt{THRESH_TRUNC} und das adaptive Schwellwertverfahren \texttt{adaptiveThreshold()} an. Adaptive Schwellwertverfahren ermöglichen den Einsatz spezifischer Schwellwerte für einen Pixel im Zielbild. Dieser spezifische Schwellwert wird auf Basis einer Gruppe benachbarter Pixel  ermittelt \cite[S.342 f]{FernandezVillan2019}. Die im Rahmen der Bachelor-Arbeit entwickelte Lösung unterstützt die Parametrierung dieser Funktionen. Anhand des Value Objects \texttt{\glqq{}AdaptiveThresholdingConfiguration\grqq{}} kann aus der Enumeration \texttt{\glqq{}AdaptiveThresholdingType\grqq{}} das Verfahren zur Schwellwertanalyse ausgewählt und konfiguriert werden. 
+Nebst der Funktion \texttt{threshold()} und dem Typ \texttt{THRESH_BINARY} bietet OpenCV weiteren Typen wie \texttt{THRESH_BINARY_INV} oder \texttt{THRESH_TRUNC} und das adaptive Schwellwertverfahren \texttt{adaptiveThreshold()} an. Adaptive Schwellwertverfahren ermöglichen den Einsatz spezifischer Schwellwerte für einen Pixel im Zielbild. Dieser spezifische Schwellwert wird auf Basis einer Gruppe benachbarter Pixel  ermittelt \cite[S.342 f]{FernandezVillan2019}. Die im Rahmen der Bachelor-Arbeit entwickelte Lösung unterstützt die Parametrierung dieser Funktionen. Anhand des Value Objects \texttt{AdaptiveThresholdingConfiguration} kann aus der Enumeration \texttt{AdaptiveThresholdingType} das Verfahren zur Schwellwertanalyse ausgewählt und konfiguriert werden. 
 
 \begin{figure}[H]
 	\center
@@ -328,7 +328,7 @@ Eine Ausnahme stellt ein nicht voller Stall dar. Leere Boxen ermöglichen der ka
 
 \subsubsection{Filterung der Konturen nach Extent}
 Um diese Ergebnisse weiter zu analysieren, wurde mittels \texttt{minAreaRect()} für jede Kontur das Rechteck ermittelt, welches mit der kleinsten Fläche sämtliche Punkte der Kontur einschliesst \citep[S. 382 f.]{FernandezVillan2019}. Die Rechtecke wurden schwarz ins Originalbild eingezeichnet. 
-Dies dient als Grundlage des \flqq Extent\frqq. Dabei handelt es sich um das Verhältnis zwischen der Fläche der Kontur und der Fläche des Rechtecks, das die Kontur einschliesst (Formel \ref{Extent}).
+Dies dient als Grundlage des \glqq Extent\grqq{}. Dabei handelt es sich um das Verhältnis zwischen der Fläche der Kontur und der Fläche des Rechtecks, das die Kontur einschliesst (Formel \ref{Extent}).
 
 \begin{equation}\label{Extent}
 Extent =  \frac{Fl\ddot{a}che\ der\ Kontur}{Fl\ddot{a}che\  umschliessendes\  Rechteck}  
