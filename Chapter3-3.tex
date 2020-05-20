@@ -22,12 +22,12 @@ Sämtliche zur Modellierung fachlicher Attribute der Entitäten definierten Valu
 		
 		\midrule
 Grün \cellcolor[RGB]{204,235,197}&  Biologische Gegenstände im Domänenmodell und Value Objects in der Bibliothek, welche diese natürlichen Gegenstände beschreiben. \\
-Lila \cellcolor[RGB]{253,218,236} & Zu optimierende Ressourcen und Faktoren und Value Objects in der Bibliothek,  welche diese zu optimierenden Gegenstände beschreiben.\\
+Lila \cellcolor[RGB]{253,218,236} & Sowohl zu optimierende Ressourcen und Faktoren als auch Value Objects in der Bibliothek,  welche diese zu optimierenden Gegenstände beschreiben.\\
 Blau\cellcolor[RGB]{179,205,227} &  Objekte oder Resultate der Domäne \glqq{}Image Analysis\grqq{}. Zudem Value Objects in der Bibliothek, welche die Gegenstände dieser Domäne beschreiben. \\
 Braun \cellcolor[RGB]{229,216,189}& Tatsächlicher Kern der Domäne \glqq{}Image Analysis\grqq{}. Dieser Kern implementiert das wichtigste Domänenwissen und relevante Funktionen.\\			
 Violett \cellcolor[RGB]{222,203,228} & Objekte, die zum Versenden von Benachrichtigungen benötigt werden und Value Objects in der Bibliothek, welche die Gegenstände dieser Domäne beschreiben.\\
 Grau\cellcolor[RGB]{242,242,242} &  Paket für die Konfiguration der Benachrichtigungen und Value Objects in der Bibliothek, welche die Gegenstände dieser Domäne beschreiben.\\		
-Gelb \cellcolor[RGB]{255,255,204}& Value Objects, welche direkt im Domänenmodell oder in der Lösungsdokumentation eingebettet sind. Zudem Value Objects die allgemeiner Natur sind und in mehreren Paketen eingesetzt werden. \\		
+Gelb \cellcolor[RGB]{255,255,204}& Value Objects, welche direkt im Domänenmodell oder in der Lösungsdokumentation eingebettet sind. Zudem Value Objects, welche allgemeiner Natur sind und in mehreren Paketen eingesetzt werden. \\		
 Orange \cellcolor[RGB]{254,217,166} &  Paket \glqq{}Housekeeping\grqq{} und Klassen vom Paket \glqq{}Image Analysis\grqq{}, welche dem Housekeeping dienen. \\
 		
 		\bottomrule
@@ -40,7 +40,7 @@ Orange \cellcolor[RGB]{254,217,166} &  Paket \glqq{}Housekeeping\grqq{} und Klas
 \newgeometry{margin=2.5cm} % Ränder kleiner	
 \begin{landscape}
 
-\subsection{Domänenmodell Geburt}
+\subsection{Domänenmodell Kalbsgeburt}
 \begin{figure}[H]
 	\center
 	\includegraphics[scale=0.38]{Grafiken/modelle/domain-birth.jpg}
@@ -49,31 +49,59 @@ Orange \cellcolor[RGB]{254,217,166} &  Paket \glqq{}Housekeeping\grqq{} und Klas
 \end{figure}
 
 
-\subsection{Allgemeine Bibliothek an Value Objects }
+\subsection{Bibliothek an Value Objects }
 
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=1.8]{Grafiken/modelle/vo-general2.jpg}
+	\includegraphics[scale=2]{Grafiken/modelle/vo-general.jpg}
 	\caption{Allgemeine Bibliothek an Value Objects}
-	\label{fig: Allgemeine Bibliothek an Value Objects} 
+	\label{fig: Allgemeine Bibliothek an Value Objects}
+\end{figure}
+\end{landscape}
+\restoregeometry % Wieder die alten Ränder
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=0.34]{Grafiken/modelle/vo-imageanalysis.jpg}
+	\caption{Bibliothek an Value Objects bezüglich der Domäne \glqq{}Image Analysis\grqq{}}
+	\label{fig: Bibliothek an Value Objects bezüglich der Domäne Image Analysis}
+\end{figure}
+
+\newgeometry{margin=2.5cm} % Ränder kleiner	
+\begin{landscape}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=2.75]{Grafiken/modelle/vo-imageanalysis2.jpg}
+	\caption{Bibliothek an Value Objects bezüglich \glqq{}Trait Analysis\grqq{}}
+	\label{fig: Bibliothek an Value Objects bezüglich Trait Analysis}
 \end{figure}
 
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=1.8]{Grafiken/modelle/vo-general1.jpg}
-	\caption{Allgemeine Bibliothek an Value Objects  [Fortsetzung]}
-	\label{fig: Allgemeine Bibliothek an Value Objects [Fortsetzung]} 
+	\includegraphics[scale=2]{Grafiken/modelle/vo-biological.jpg}
+	\caption{Bibliothek an Value Objects zu den biologischen Gegenständen der Domäne \glqq{}Kalbsgeburt\grqq{}}
+	\label{fig: Bibliothek an Value Objects zu den biologischen Gegenständen der Domäne Kalbsgeburt}
 \end{figure}
+
 
 \subsection{Bibliothek an Value Objects zur Konfiguration und zum Versand von Nachrichten}
 \begin{figure}[H]
 	\center
-	\includegraphics[scale=0.38]{Grafiken/modelle/vo-messaging.jpg}
-	\caption{Bibliothek an Value Objects bezüglich Konfiguration und Versand von Nachrichten} 
-	\label{fig: Bibliothek an Value Objects zur Konfiguration und zum Versand von Nachrichten}
+	\includegraphics[scale=2]{Grafiken/modelle/vo-message-configuration.jpg}
+	\caption{Bibliothek an Value Objects bezüglich Konfiguration von Nachrichten} 
+	\label{fig: Bibliothek an Value Objects bezüglich Konfiguration von Nachrichten} 
 \end{figure}
+
 
 
 \end{landscape}
 \restoregeometry % Wieder die alten Ränder
+
+\begin{figure}[H]
+	\center
+	\includegraphics[scale=1.7]{Grafiken/modelle/vo-postConfiguration.jpg}
+	\caption{Bibliothek an Value Objects bezüglich Versand von Nachrichten} 
+	\label{fig: Bibliothek an Value Objects bezüglich Versand von Nachrichten} 
+\end{figure}

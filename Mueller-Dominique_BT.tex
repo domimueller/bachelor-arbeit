@@ -153,6 +153,7 @@
   
 \usepackage{glossaries}
 \setglossarystyle{altlist}
+\renewcommand{\glossarysection}[2][]{}
 \makeglossaries
 
 
@@ -313,8 +314,9 @@
     \listoftables% Tabellenverzeichnis	       
     \input{Bibliography}
     \input{Appendix}
-    \input{Appendix-Glossary}
-    \input{Appendix-Documentation}   
+    \input{Appendix-Glossary}  
+    \input{Appendix-Documentation} 
+
 \end{document}
 
 % ================================================================
